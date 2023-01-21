@@ -1,4 +1,9 @@
-font-family: 'Marko One', serif;
+@font-face
+    fon-family: 'Lemonada';
+    src: url(Font Lemonada\Lemonada-Regular.ttf) format('truetype');
+
+
+
 font-size: 32px;
 font-weight: 700;
 line-height: 64px;

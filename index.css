@@ -1,3 +1,8 @@
+@font-face
+    fon-family: 'Lemonada';
+    src: url(Font Lemonada\Lemonada-Regular.ttf) format('truetype');
+
+
 html {
     height: 100%;
     margin: 0;
@@ -43,7 +48,7 @@ body {
     display: inline-block;
     color: #036DE9;
     text-shadow: 1px 1px #FFFFFF;
-    font-family: 'Marko One', serif;
+    font-family: 'Lemonada', serif;
     font-size: 32px;
     font-weight: bold;
 
@@ -52,7 +57,7 @@ body {
 .reads-logo {
     border: 2px solid orange;
     display: inline-block;
-    font-family: 'Marko One', serif;
+    font-family: 'Lemonada', serif;
     font-size: 32px;
     font-weight: bold;
 }
@@ -103,11 +108,13 @@ body {
     margin: 0px 25px;
 }
 
-
-
 .hero-img {
     height: 483px;
     max-width: 1440px;
+}
+
+h3 {
+    font-family: 'Lemonada', serif;
 }
 
 p {

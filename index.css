@@ -147,10 +147,33 @@ input {
     max-width: 1440px;
 }
 
+.know-cont {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+}
+
 h3 {
+    display: grid | inline-grid;
     font-family: 'Lemonada', serif;
 }
 
 p {
+    
     font-family: 'Inter', sans-serif;
+}
+
+.btn-cont {
+    display: grid | inline-grid;
+}
+
+.solo-tab-cont {
+    width: 349px;
+    height: 330px;
+}
+
+.solo-tab {
+    display: grid;
+    column-gap: 5px;
 }

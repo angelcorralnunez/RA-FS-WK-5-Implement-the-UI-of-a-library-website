@@ -48,7 +48,7 @@ nav a {
     grid-template-columns: repeat(2, 1fr);
     width: 141px;
     height: 64px;
-    margin: 15px 35px 0 35px;
+    margin: 20px 35px 0 35px;
 }
 
 #e-logo {
@@ -58,7 +58,6 @@ nav a {
     font-family: 'Lemonada', serif;
     font-size: 32px;
     font-weight: bold;
-    width: 25%;
 }
 
 .reads-logo {
@@ -66,46 +65,79 @@ nav a {
     font-family: 'Lemonada', serif;
     font-size: 32px;
     font-weight: bold;
-    width: 75%;
 }
 
 .home {
-    border: 2px solid red;
     display: inline-block;
-    margin: auto;
+    margin: 40px 40px 40px 80px;
+    padding: 0;
     font-size: 18px;
 }
 
 .about {
-    border: 2px solid green;
     display: inline-block;
-    margin: auto;
+    margin: 40px 40px 40px 80px;
+    padding: 0;
     font-size: 18px;
 }
 
 .reg {
-    border: 2px solid greenyellow;
     display: inline-block;
-    margin: auto;
+    margin: 40px 40px 40px 80px;
+    padding: 0;
     font-size: 18px; 
 }
 
 .ebooks {
-    border: 2px solid violet;
     display: inline-block; 
-    margin: auto;
+    margin: 40px 40px 40px 80px;
+    padding: 0;
     font-size: 18px;
+    white-space: nowrap;
 }
 
 .search-ebooks {
-    border: 2px solid hotpink;
     display: inline-block; 
-    margin: auto;
+    width: 220px;
+    height: 36px;
+    border-radius: 12px;
+    margin: 35px 40px 40px 80px;
+    padding: 0;
     font-size: 18px;
+    background: #D9D9D9;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+  }
+  .search-field {
+    width: 100%;
+    padding: 10px 15px 10px 35px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+  }
+  
+  .search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 5px 0 2px 5px;
+  }
+  
+  .search-button img {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+  }
+
+input {
+    padding-left: 5px;
+    background: #D9D9D9;
 }
 
 .profile-img {
-    border: 2px solid salmon;
     display: inline-block;
     margin: auto;
 }

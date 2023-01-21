@@ -148,10 +148,11 @@ input {
 }
 
 .know-cont {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 0px 0px; 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+    width: min(90%, 68.5rem);
+    margin-inline: auto;
 }
 
 h3 {
@@ -171,6 +172,11 @@ p {
 .solo-tab-cont {
     width: 349px;
     height: 330px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+    width: min(90%, 68.5rem);
+    margin-inline: auto;
 }
 
 .solo-tab {

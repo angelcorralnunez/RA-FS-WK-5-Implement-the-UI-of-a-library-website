@@ -2,6 +2,9 @@
     fon-family: 'Lemonada';
     src: url(Font Lemonada\Lemonada-Regular.ttf) format('truetype');
 
+    @font-face
+    fon-family: 'Inter';
+    src: url(Font Inter\Inter-Black.otf) format('opentype');
 
 html {
     height: 100%;
@@ -9,7 +12,6 @@ html {
     padding: 0;
     min-width: 400px;
     max-width: 1440px;
-    border: 2px solid red;
 }
 
 body {
@@ -18,12 +20,12 @@ body {
     height: 100%;
     padding: 0;
     background: #D9D9D9;
-    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar-main {
-    display: flex;
-    align-items:center;
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
     width: 1440px;
     height: 112px;
     padding: 5px;
@@ -32,80 +34,80 @@ body {
     box-sizing:border-box;
     border: 1px solid invisible;
     background-color: #3A3838;
-    color:#FFFFFF;
+    color: #FFFFFF;
+}
+
+nav a {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .e-logo-cont {
-    border: 2px solid teal;
-    display: inline-block; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 141px;
     height: 64px;
     margin: 15px 35px 0 35px;
 }
 
 #e-logo {
-    border: 2px solid yellow;
-    display: inline-block;
+    display: grid | inline-grid;
     color: #036DE9;
     text-shadow: 1px 1px #FFFFFF;
     font-family: 'Lemonada', serif;
     font-size: 32px;
     font-weight: bold;
-
+    width: 25%;
 }
 
 .reads-logo {
-    border: 2px solid orange;
-    display: inline-block;
+    display: grid | inline-grid;
     font-family: 'Lemonada', serif;
     font-size: 32px;
     font-weight: bold;
-}
-
-.navbar-center {
-    display: inline-block;
-
+    width: 75%;
 }
 
 .home {
     border: 2px solid red;
     display: inline-block;
-    margin: 0px 25px 0px 65px;
+    margin: auto;
     font-size: 18px;
 }
 
 .about {
     border: 2px solid green;
     display: inline-block;
-    margin: 0px 25px;
+    margin: auto;
     font-size: 18px;
 }
 
 .reg {
     border: 2px solid greenyellow;
     display: inline-block;
-    margin: 0px 25px;
+    margin: auto;
     font-size: 18px; 
 }
 
 .ebooks {
     border: 2px solid violet;
     display: inline-block; 
-    margin: 0px 25px;
+    margin: auto;
     font-size: 18px;
 }
 
 .search-ebooks {
     border: 2px solid hotpink;
     display: inline-block; 
-    margin: 0px 25px;
+    margin: auto;
     font-size: 18px;
 }
 
 .profile-img {
     border: 2px solid salmon;
     display: inline-block;
-    margin: 0px 25px;
+    margin: auto;
 }
 
 .hero-img {
@@ -118,5 +120,5 @@ h3 {
 }
 
 p {
-    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
 }

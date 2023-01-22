@@ -142,14 +142,12 @@ input {
 }
 
 .mid-cont {
-    border: 2px solid aqua;
     display: grid;
-    grid-template-columns: 55% 3% 30%;
+    grid-template-columns: 53.5% 5% 30%;
     width: 1440px;
 }
 
 .txt-cont {
-    border: 2px solid red;
     font-family: 'Lemonada', serif;
     font-weight: bold;
     display: grid;
@@ -157,20 +155,17 @@ input {
 }
 
 h1 {
-    border: 2px solid black;
     margin: auto;
     padding-top: 50px;
 }
 
 .par-cont {
-    border: 2px solid lime;
     margin: auto;
     text-align: left;
     padding: 30px;
 }
 
 #e {
-    border: 2px solid red;
     font-size: 24px;
     margin: auto;
     color: #036DE9;
@@ -179,20 +174,17 @@ h1 {
 }
 
 .par-txt {
-    border: 2px solid yellow;
     font-size: 24px;
     margin: auto;
     display: inline;
 }
 
 .contact {
-    border: 2px solid blue;
     font-size: 24px;
     padding: 0 30px;
 }
 
 .img-cont {
-    border: 2px solid green;
     display: grid;
     width: 595px;
     height: 830px;
@@ -200,7 +192,6 @@ h1 {
 }
 
 .ldr-img {
-    border: 2px solid purple;
     margin: auto;
     width: 595px;
     height: 830px;

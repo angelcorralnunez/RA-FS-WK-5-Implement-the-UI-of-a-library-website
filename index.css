@@ -1,3 +1,4 @@
+
 @font-face
     fon-family: 'Lemonada';
     src: url(Font Lemonada\Lemonada-Regular.ttf) format('truetype');
@@ -149,24 +150,29 @@ input {
 .btm-home-grid {
     border: 2px solid green;
     display: grid;
+    grid-template-columns: 60% 40%;
+    max-width: 1440px;
 }
 
 .know-cont {
     display: grid;
-
-    grid-template-columns: 50px 100px;
-    max-width: 60%;
+    grid-template-rows: 40% 40% 20%;
+    max-width: 850px;
     border: 2px solid red;
 }
 
 h3 {
     border: 2px solid yellow;
+    font-size: 32px;
     display: grid;
+    margin: auto;
     font-family: 'Lemonada', serif;
 }
 
 p {
     border: 2px solid orange;
+    font-size: 20px;
+    text-align: center;
     font-family: 'Inter', sans-serif;
 }
 
@@ -177,25 +183,18 @@ p {
 
 .solo-tab-cont {
     border: 2px solid blue;
-    width: 349px;
-    height: 330px;
-    max-width: 40%;
-    display: grid;
-    
-    grid-template-columns: 50px 100px;
-    gap: 0rem;
-    width: min(90%, 68.5rem);
-    margin-inline: auto;
+    align-items: left;
 }
 
 .solo-tab {
     border: 2px solid purple;
     display: grid;
-    column-gap: 5px;
+    margin: auto;
+    width: 349px;
+    height: 330px;
 }
 
 footer {
     border: 2px solid cyan;
 }
 
-grid-template-columns: repeat(1, 1fr);

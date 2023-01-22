@@ -163,13 +163,12 @@ h3 {
     font-size: 32px;
     display: grid;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 40px;
     font-family: 'Lemonada', serif;
 }
 
 p {
     font-size: 20px;
-    padding-top: 20px;
     margin: auto;
     text-align: center;
     font-family: 'Inter', sans-serif;

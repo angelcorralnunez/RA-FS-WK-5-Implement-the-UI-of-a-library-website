@@ -156,7 +156,7 @@ input {
 
 .know-cont {
     display: grid;
-    grid-template-rows: 40% 40% 20%;
+    grid-template-rows: 30% 50% 20%;
     max-width: 850px;
     border: 2px solid red;
 }
@@ -166,32 +166,54 @@ h3 {
     font-size: 32px;
     display: grid;
     margin: auto;
+    padding-top: 20px;
     font-family: 'Lemonada', serif;
 }
 
 p {
     border: 2px solid orange;
     font-size: 20px;
+    padding-top: 20px;
+    margin: auto;
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
 
-.btn-cont {
+.strt-btn-cont {
     border: 2px solid brown;
     display: grid;
+    max-height: 53px;
+    max-width: 213px;
+    margin: auto;   
+}
+
+.strt-rd-btn {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid invisible;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 15px 40px;
+    
 }
 
 .solo-tab-cont {
-    border: 2px solid blue;
     align-items: left;
+    padding-top: 15px;
+    width: 349px;
+    height: 330px;
 }
 
 .solo-tab {
-    border: 2px solid purple;
     display: grid;
-    margin: auto;
-    width: 349px;
-    height: 330px;
+    
+    border-radius: 12px;
+}
+
+.hm-footer-cont {
+
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 footer {

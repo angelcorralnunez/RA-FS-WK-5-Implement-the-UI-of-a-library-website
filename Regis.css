@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     height: 100%;
     padding: 0;
-    background: #D9D9D9;
+    background: #FFFFFF;
     font-family: 'Inter', sans-serif;
 }
 
@@ -141,27 +141,66 @@ input {
     margin: auto;
 }
 
+main {
+    border: 2px solid royalblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 1440px;
+}
+
 .lft-cont {
     border: 2px solid blue;
     display: grid;
-    grid-template-columns: 52.2% 5% 30%;
-    width: 1440px;
+    grid-template-rows: 20% 10% 70% 10% 20%;
+    width: 720px;
 }
 
 .welcome {
     border: 2px solid orange;
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+    margin: auto;
+    font-size: 22px;
+    width: 375px;
+}
+
+.welc-to {
+    margin: auto 0;
+    width: 225px;
+    font-family: 'Lemonada', serif;
+}
+
+.welc-e {
+    margin: auto;
+    color: #036DE9;
+    font-family: 'Lemonada', serif;
+    width: 15px;
+}
+
+.welc-rds {
+    margin: auto;
+    width: 125px;
+    font-family: 'Lemonada', serif;
 }
 
 .sign-up {
-    
+    border: 2px solid gray;
+    max-height: 19px;
+    max-width: 61px;
 }
 
 h5 {
     border: 2px solid green;
+    max-height: 19px;
+    max-width: 61px;
 }
 
 .form-box {
+    border: 2px solid brown;
+}
 
+p {
+    max-height: 20px;
 }
 
 .reg-form {
@@ -200,6 +239,10 @@ h5 {
 input {
     padding-left: 5px;
     background: #D9D9D9;
+}
+
+.t-c-txt {
+    border: 2px solid plum;
 }
 
 .btn-box {

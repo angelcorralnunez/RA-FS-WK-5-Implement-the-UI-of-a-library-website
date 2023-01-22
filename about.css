@@ -143,7 +143,7 @@ input {
 
 .mid-cont {
     display: grid;
-    grid-template-columns: 53.5% 5% 30%;
+    grid-template-columns: 52.2% 5% 30%;
     width: 1440px;
 }
 
@@ -162,11 +162,11 @@ h1 {
 .par-cont {
     margin: auto;
     text-align: left;
-    padding: 30px;
+    padding: 30px 0px 30px 60px;
 }
 
 #e {
-    font-size: 24px;
+    font-size: 22px;
     margin: auto;
     color: #036DE9;
     font-family: 'Lemonada', serif;
@@ -174,14 +174,14 @@ h1 {
 }
 
 .par-txt {
-    font-size: 24px;
+    font-size: 22px;
     margin: auto;
     display: inline;
 }
 
 .contact {
-    font-size: 24px;
-    padding: 0 30px;
+    font-size: 22px;
+    padding: 0px 0px 0px 70px;
 }
 
 .img-cont {

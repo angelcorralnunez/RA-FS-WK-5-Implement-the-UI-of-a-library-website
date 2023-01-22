@@ -148,7 +148,6 @@ input {
 }
 
 .btm-home-grid {
-    border: 2px solid green;
     display: grid;
     grid-template-columns: 60% 40%;
     max-width: 1440px;
@@ -158,11 +157,9 @@ input {
     display: grid;
     grid-template-rows: 30% 50% 20%;
     max-width: 850px;
-    border: 2px solid red;
 }
 
 h3 {
-    border: 2px solid yellow;
     font-size: 32px;
     display: grid;
     margin: auto;
@@ -171,7 +168,6 @@ h3 {
 }
 
 p {
-    border: 2px solid orange;
     font-size: 20px;
     padding-top: 20px;
     margin: auto;
@@ -180,7 +176,6 @@ p {
 }
 
 .strt-btn-cont {
-    border: 2px solid brown;
     display: grid;
     max-height: 53px;
     max-width: 213px;
@@ -207,16 +202,21 @@ p {
 
 .solo-tab {
     display: grid;
-    
     border-radius: 12px;
 }
 
-.hm-footer-cont {
-
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
 footer {
-    border: 2px solid cyan;
+    max-width: 1440px;
+    display: grid;
 }
 
+.footer-cont {
+    display: grid;
+    margin: auto;                                               
+    grid-template-columns: 100%;
+}
+
+.ftr-txt {
+    font-size: 18px;
+    padding: 60px 8px 0 8px; 
+}

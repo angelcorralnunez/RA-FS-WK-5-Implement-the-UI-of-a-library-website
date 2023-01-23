@@ -237,26 +237,29 @@ h5 {
 }
 
 p {
-    max-height: 20px;
+    height: 30px;
+    align-items:center;
+    margin-bottom: 10px;
+    margin-top: 0;
+
 }
 
 .reg-form {
     border: 2px solid red;
-    display: inline-block; 
+    display: grid; 
     width: 432px;
-    height: 20px;
     border-radius: 10px;
-    margin: auto;
     padding: 0;
     font-size: 18px;
     background: #FFFFFF;
+    margin: auto;
 }
 
 .ereg-form {
     border: 2px solid purple;
-    display: flex;
-    flex-direction: row;
+    display: grid;
   }
+
   .reg-field {
     width: 100%;
     padding: 10px 15px 10px 35px;
@@ -290,6 +293,8 @@ input {
 
 .btn-cont {
     margin: auto;
+    position: static;
+    
 }
 
 .btn-box {

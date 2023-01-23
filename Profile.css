@@ -145,24 +145,67 @@ main {
     border: 2px solid blue;
     display: grid;
     grid-template-columns: 100%;
-    width: 1440px;
+    grid-template-rows: 10% 35% 35%;
+    max-width: 1440px;
     height: 830px;
 }
 
 .upper-txt-box {
     border: 2px solid purple;
+    display: grid;
+    color: #036DE9;
+    height: 150px;
+}
+
+h2 {
+    font-family: 'Lemonada', serif;
+    font-weight: bold;
+    padding-left: 125px;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    padding-left: 125px;
 }
 
 .top-grid-row {
     border: 2px solid yellow;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%; 
+    grid-column-gap: 60px;
+    height: 144px;
+    width: 1440px;
+   
+}
+
+.numbers {
+    color: #036DE9;
+}
+
+.box-one {
+    border: 2px dashed red;
+    height: 144px;
+    width: 288px;
 }
 
 .my-ebooks {
     border: 2px solid red;
 }
 
+.box-two {
+    border: 2px dashed red;
+    height: 144px;
+    width: 288px;
+}
+
 .my-audio {
     border: 2px solid red;
+}
+
+.box-three {
+    border: 2px dashed red;
+    height: 144px;
+    width: 288px;
 }
 
 .my-music {
@@ -170,19 +213,46 @@ main {
 }
 
 .bot-grid-row {
-    border: 2px solid aqua; 
+    border: 2px solid aqua;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%; 
+    grid-column-gap: 60px;
+    height: 144px;
+    width: 1440px;
+  
+}
+
+.box-four {
+    border: 2px dashed green;
+    height: 144px;
+    width: 288px;
+    
 }
 
 .my-faves {
     border: 2px solid green;
 }
 
+.box-five {
+    border: 2px dashed green;
+    height: 144px;
+    width: 288px;
+    
+}
+
 .my-podcast {
-    border: 2px solid green;
+    border: 2px dashed green;
+}
+
+.box-six {
+    border: 2px dashed green;
+    height: 144px;
+    width: 288px;
+    
 }
 
 .my-profile {
-    border: 2px solid green;
+    border: 2px dashed green;
 }
 
 footer {

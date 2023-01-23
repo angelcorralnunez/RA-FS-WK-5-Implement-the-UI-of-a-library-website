@@ -151,7 +151,7 @@ main {
 .lft-cont {
     border: 2px solid blue;
     display: grid;
-    grid-template-rows: 20% 10% 70% 10% 20%;
+    grid-template-rows: 20% 60% 10% 10%;
     width: 720px;
     height: 725px;
 }
@@ -209,27 +209,31 @@ h5 {
 
 .form-box {
     border: 2px solid brown;
-    height: 700px;
+    height: 550px;
 }
 
 .whats-cont {
     border: 2px solid red;
     margin: auto;
+    height: 100px;
 }
 
 .create-cont {
     border: 2px solid purple;
     margin: auto;
+    height: 100px;
 }
 
 .confirm-cont {
     border: 2px solid yellow;
     margin: auto;
+    height: 100px;
 }
 
 .what-cont {
     border: 2px solid blue;
     margin: auto;
+    height: 100px;
 }
 
 p {
@@ -240,9 +244,9 @@ p {
     border: 2px solid red;
     display: inline-block; 
     width: 432px;
-    height: 56px;
+    height: 20px;
     border-radius: 10px;
-    margin: 35px 40px 40px 80px;
+    margin: auto;
     padding: 0;
     font-size: 18px;
     background: #FFFFFF;
@@ -285,13 +289,14 @@ input {
 }
 
 .btn-cont {
-
+    margin: auto;
 }
 
 .btn-box {
     border: 2px solid lime;
     height: 60px;
     width: 270px;
+    margin: auto;
 }
 
 .profile-btn {

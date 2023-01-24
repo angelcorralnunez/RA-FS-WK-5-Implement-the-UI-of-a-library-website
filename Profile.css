@@ -142,117 +142,182 @@ input {
 }
 
 main {
-    border: 2px solid blue;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 35% 35%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     max-width: 1440px;
     height: 830px;
 }
 
 .upper-txt-box {
-    border: 2px solid purple;
-    display: grid;
+    display: block;
     color: #036DE9;
     height: 150px;
+    width: 100%;
 }
 
 h2 {
     font-family: 'Lemonada', serif;
     font-weight: bold;
-    padding-left: 125px;
+    padding-left: 150px;
+    padding-top: 20px;
 }
 
 h3 {
     font-family: 'Inter', sans-serif;
-    padding-left: 125px;
+    padding-left: 150px;
 }
 
-.top-grid-row {
-    border: 2px solid yellow;
+.top-grid-row-a {
+    border: 2px solid lime;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%; 
-    grid-column-gap: 60px;
-    height: 144px;
-    width: 1440px;
-   
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin-inline: auto;  
+    margin-top: 30px;
+    font-family: 'Lemonada', serif;
+} 
+
+.top-grid-row-b {
+    border: 2px solid lime;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin-inline: auto;  
+    margin-top: 30px;
+    font-family: 'Lemonada', serif;
 }
 
 .numbers {
+    border: 2px dashed blue;
     color: #036DE9;
+    font-size: 24px;
+    font-weight: bold;
+    margin: auto;
 }
 
 .box-one {
     border: 2px dashed red;
-    height: 144px;
-    width: 288px;
+    display: flex;
+    flex-direction: row;
+    height: 125px;
+    width: 250px;
+    margin: auto;
+    
+}
+
+.bookshelf {
+    border: 2px dashed blue;
+    width: 62px; 
+    height: 56px;
+
 }
 
 .my-ebooks {
     border: 2px solid red;
+    display: inline-block;
+    margin: auto;
+    font-weight: bold;
 }
 
 .box-two {
     border: 2px dashed red;
-    height: 144px;
-    width: 288px;
+    height: 125px;
+    width: 250px;
+    margin: 0 20px;
+}
+
+.headphones {
+    border: 2px dashed blue;
 }
 
 .my-audio {
     border: 2px solid red;
+    font-weight: bold;
 }
 
 .box-three {
     border: 2px dashed red;
-    height: 144px;
-    width: 288px;
+    height: 125px;
+    width: 250px;
+    margin: 0 20px;
+}
+
+.musical-note {
+    border: 2px dashed blue;
 }
 
 .my-music {
     border: 2px solid red;
+    font-weight: bold;
 }
 
 .bot-grid-row {
-    border: 2px solid aqua;
+    border: 2px solid orange;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%; 
-    grid-column-gap: 60px;
-    height: 144px;
-    width: 1440px;
-  
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin-inline: auto;  
+    margin-top: 30px;
+    font-family: 'Lemonada', serif;
 }
 
 .box-four {
     border: 2px dashed green;
-    height: 144px;
-    width: 288px;
-    
+    height: 125px;
+    width: 250px;
+    margin: 0 20px;
+}
+
+.heart-multiple {
+    border: 2px dashed blue;
 }
 
 .my-faves {
     border: 2px solid green;
+    font-weight: bold;
 }
 
 .box-five {
     border: 2px dashed green;
-    height: 144px;
-    width: 288px;
-    
+    height: 125px;
+    width: 250px;
+    margin: 0 20px;
+}
+
+.microphone {
+    border: 2px dashed blue;
 }
 
 .my-podcast {
     border: 2px dashed green;
+    font-weight: bold;
 }
 
 .box-six {
     border: 2px dashed green;
-    height: 144px;
-    width: 288px;
-    
+    height: 125px;
+    width: 250px;
+    margin: 0 20px;
+}
+
+.person {
+    border: 2px dashed blue;
 }
 
 .my-profile {
     border: 2px dashed green;
+    font-weight: bold;
+}
+
+#update {
+    font-family: 'Inter', sans-serif;
 }
 
 footer {

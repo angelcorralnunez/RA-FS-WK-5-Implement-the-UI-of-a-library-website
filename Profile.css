@@ -169,143 +169,207 @@ h3 {
 }
 
 .top-grid-row {
-    border: 2px solid lime;
     display: grid;
-    justify-content: center;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 100%;
-    margin-inline: auto;  
     margin-top: 30px;
     font-family: 'Lemonada', serif;
 } 
 
 .numbers {
-    border: 2px dashed blue;
     color: #036DE9;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     margin: auto;
+    padding: 0 0 20px 60px;
+    align-items: center;
+    height: 25%;
 }
 
 .box-one {
-    border: 2px dashed red;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     height: 125px;
     width: 250px;
     margin: auto;
-    
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* Firefox 4+, Opera, Chrome */
+    -webkit-box-shadow: 10 5px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
 }
 
 .bookshelf {
-    border: 2px dashed blue;
     width: 62px; 
     height: 56px;
 
 }
 
+.bookshelf {
+    padding: 10px 0 0 10px;
+}
+
 .my-ebooks {
-    border: 2px solid red;
-    display: inline-block;
     margin: auto;
+    padding: 20px 0 5px 20px;
     font-weight: bold;
+    height: 25%;
 }
 
 .box-two {
-    border: 2px dashed red;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     height: 125px;
     width: 250px;
-    margin: 0 20px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* Firefox 4+, Opera, Chrome */
+    -webkit-box-shadow: 10 5px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
 }
 
 .headphones {
-    border: 2px dashed blue;
+    padding: 10px 0 0 10px;
 }
 
 .my-audio {
-    border: 2px solid red;
+    margin: auto;
+    padding: 20px 0 5px 0;
     font-weight: bold;
+    height: 25%;
+    width: 100%;
 }
 
 .box-three {
-    border: 2px dashed red;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     height: 125px;
     width: 250px;
-    margin: 0 20px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* Firefox 4+, Opera, Chrome */
+    -webkit-box-shadow: 10 5px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
 }
 
 .musical-note {
-    border: 2px dashed blue;
+    padding: 10px 0 0 10px;
 }
 
 .my-music {
-    border: 2px solid red;
+    margin: auto;
+    padding: 20px 0 5px 20px;
     font-weight: bold;
+    height: 25%;
 }
 
 .bot-grid-row {
-    border: 2px solid orange;
     display: grid;
-    justify-content: center;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 100%;
-    margin-inline: auto;  
     margin-top: 30px;
     font-family: 'Lemonada', serif;
 }
 
 .box-four {
-    border: 2px dashed green;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     height: 125px;
     width: 250px;
-    margin: 0 20px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* Firefox 4+, Opera, Chrome */
+    -webkit-box-shadow: 10 5px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
 }
 
 .heart-multiple {
-    border: 2px dashed blue;
+    padding: 10px 0 0 10px;
 }
 
 .my-faves {
-    border: 2px solid green;
+    margin: auto;
+    padding: 20px 0 5px 20px;
     font-weight: bold;
+    height: 25%;
 }
 
 .box-five {
-    border: 2px dashed green;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     height: 125px;
     width: 250px;
-    margin: 0 20px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* Firefox 4+, Opera, Chrome */
+    -webkit-box-shadow: 10 5px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
 }
 
 .microphone {
-    border: 2px dashed blue;
+    padding: 10px 0 0 10px;
 }
 
 .my-podcast {
-    border: 2px dashed green;
+    margin: auto;
+    padding: 20px 0 5px 20px;
     font-weight: bold;
+    height: 25%;
 }
 
 .box-six {
-    border: 2px dashed green;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     height: 125px;
     width: 250px;
-    margin: 0 20px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* Firefox 4+, Opera, Chrome */
+    -webkit-box-shadow: 10 5px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
 }
 
 .person {
-    border: 2px dashed blue;
+    padding: 10px 0 0 10px;
 }
 
 .my-profile {
-    border: 2px dashed green;
+    margin: auto;
     font-weight: bold;
+    padding: 20px 0 5px 20px;
+    height: 10%;
 }
 
 #update {
     font-family: 'Inter', sans-serif;
+    margin: auto;
+    padding: 15px 0 5px 20px;
+    height: 25%;
 }
 
 footer {

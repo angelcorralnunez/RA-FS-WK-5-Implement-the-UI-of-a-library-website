@@ -147,7 +147,189 @@ input {
     max-width: 1440px;
 }
 
+.main-cont {
+    border: 2px solid black;
+}
 
+.menu-col-cont {
+    border: 2px solid blue;
+}
+
+.pop-rds-cont {
+    border: 2px solid green;
+}
+
+.pop-rds-title-cont {
+    border: 2px solid yellow;
+}
+
+#h3-pop-rds {
+    border: 2px solid fuchsia;
+}
+
+.pop-rds-lst-cont {
+    border: 2px solid orange;
+}
+
+.pop-rds-list {
+    border: 2px solid aqua;
+}
+
+.fic-cont {
+    border: 2px solid green;
+}
+
+.fic-title-cont {
+    border: 2px solid yellow;
+}
+
+#h3-fic {
+    border: 2px solid fuchsia;
+}
+
+.fic-lst-cont {
+    border: 2px solid orange;
+}
+
+.fic-list {
+    border: 2px solid aqua;
+}
+
+.non-fic-cont {
+    border: 2px solid green;
+}
+
+.non-fic-title-cont {
+    border: 2px solid yellow;
+}
+
+#h3-non-fic {
+    border: 2px solid fuchsia;
+}
+
+.non-fic-lst-cont {
+    border: 2px solid orange;
+}
+
+.non-fic-list {
+    border: 2px solid aqua;
+}
+
+.book-desc-main-cont {
+    border: 2px solid red;
+}
+
+.title-auth-cont {
+    border: 2px solid lightblue;
+}
+
+#h2-war-wrlds {
+    border: 2px solid fuchsia;
+}
+
+#h3-hg-wells {
+    border: 2px solid black;
+}
+
+.book-desc-sub-cont {
+    border: 2px solid yellow;
+}
+
+.book-desc-col {
+    border: 2px solid purple;
+}
+
+.book-img-cont {
+    border: 2px solid pink;
+}
+
+.rd-nw-btn-cont {
+    border: 2px solid green;
+}
+
+.read-now-button {
+    border: 2px solid orange;
+}
+
+.dwnld-btn-cont {
+    border: 2px solid blue;
+}
+
+.book-rev-col {
+    border: 2px solid aqua;
+}
+
+.bk-desc-p-cont {
+    border: 2px solid red;
+}
+
+.ratings-rev-cont {
+    border: 2px solid black;
+}
+
+#h5-rate-rev {
+    border: 2px solid fuchsia;
+}
+
+.star-icons {
+    border: 2px solid lime;
+}
+
+.review-grid-cont {
+    border: 2px solid yellow;
+}
+
+.top-rev-row {
+    border: 2px dashed red;
+}
+
+.rev-one {
+    border: 2px solid purple;
+}
+
+.icon-b {
+    border: 2px solid blue;
+}
+
+.ver-reader {
+    border: 2px solid lightblue;
+}
+
+.icon-stars {
+    border: 2px solid lightcoral;
+}
+
+.check-mrk-icon {
+    order: 2px solid lime;
+}
+
+.opinion-1 {
+    order: 2px solid black;
+}
+
+.rev-par-1 {
+    order: 2px solid orange;
+}
+
+.bot-rev-row {
+    border: 2px dashed purple;
+}
+
+.rev-two {
+    border: 2px solid red;
+}
+
+.icon-k {
+    border: 2px solid blue;
+}
+
+.opinion-2 {
+    border: 2px solid lightblue;
+}
+
+.rev-par-2 {
+    border: 2px solid fuchsia;
+}
 
 footer {
     max-width: 1440px;

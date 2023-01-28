@@ -160,6 +160,7 @@ input {
 
 .menu-col-cont {
     border: 2px solid blue;
+    font-family: 'Inter', sans-serif;
 }
 
 .pop-rds-cont {
@@ -171,7 +172,12 @@ input {
 }
 
 #h3-pop-rds {
-    border: 2px solid fuchsia;
+    display: table;
+    border-bottom: 1px solid #000000;
+    padding: 30px 20px 5px 20px;
+    color: #036DE9;
+    margin: auto;
+    
 }
 
 .pop-rds-lst-cont {
@@ -342,8 +348,8 @@ footer {
     max-width: 1440px;
     display: grid;
     position: absolute;
-    top:1125px;
-    bottom:0px;
+    top: 1125px;
+    bottom: 0px;
     margin-left: 500px;;
     
 }

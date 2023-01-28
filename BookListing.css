@@ -145,6 +145,7 @@ input {
 .upper-hero-area {
     background: #020202;
     max-width: 1440px;
+    max-height: 704px;
 }
 
 .hero-cont {
@@ -175,6 +176,61 @@ input {
     height: 215px;
     width: 1440px;
     background: #020202;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 40px;
+}
+
+.icon-txt {
+    color: #036DE9;
+    font-family: 'Lemonada', serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.book-icon-cont {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.bookshelf {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.audio-icon-cont {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.headphones {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.music-icon-cont {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.musical-note {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.pod-icon-cont {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.microphone {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0;
 }
 
 .btm-home-grid {

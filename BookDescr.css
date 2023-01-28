@@ -174,7 +174,7 @@ input {
 #h3-pop-rds {
     display: table;
     border-bottom: 1px solid #000000;
-    padding: 30px 20px 5px 20px;
+    padding: 30px 15px 5px 15px;
     color: #036DE9;
     margin: auto;
     
@@ -197,7 +197,11 @@ input {
 }
 
 #h3-fic {
-    border: 2px solid fuchsia;
+    display: table;
+    border-bottom: 1px solid #000000;
+    padding: 30px 60px 5px 60px;
+    color: #036DE9;
+    margin: auto;
 }
 
 .fic-lst-cont {
@@ -217,7 +221,11 @@ input {
 }
 
 #h3-non-fic {
-    border: 2px solid fuchsia;
+    display: table;
+    border-bottom: 1px solid #000000;
+    padding: 30px 35px 5px 35px;
+    color: #036DE9;
+    margin: auto;
 }
 
 .non-fic-lst-cont {

@@ -142,8 +142,13 @@ input {
     margin: auto;
 }
 
-.hero-cont {
+.upper-hero-area {
+    background: #020202;
+    max-width: 1440px;
+}
 
+.hero-cont {
+    max-width: 1440px;
 }
 
 .hero-img {
@@ -164,6 +169,12 @@ input {
     font-weight: bold;
     padding-left: 100px;
     letter-spacing: -1px;   
+}
+
+.icon-cont {
+    height: 215px;
+    width: 1440px;
+    background: #020202;
 }
 
 .btm-home-grid {

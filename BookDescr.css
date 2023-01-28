@@ -196,7 +196,7 @@ li a {
 .book-desc-main-cont {
     background: #F5F5F5;
     display: grid;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 1fr 8fr 1fr;
 }
 
 .title-auth-cont {
@@ -351,7 +351,7 @@ li a {
     position: relative;
     z-index: 2;
     top: 5px;
-    left: -30px;
+    left: -29px;
 }
 
 .opinion-1 {
@@ -390,12 +390,17 @@ footer {
     max-width: 1440px;
     display: grid; 
     background: #F5F5F5;
+    
 }
 
 .footer-cont {
     display: grid;
     margin: auto;                                               
-    grid-template-columns: 100%;  
+    grid-template-columns: 100%;
+    align-items: left;
+    width: 100%;
+    padding-left: 180px; 
+    margin-top: 60px; 
 }
 
 .ftr-txt {

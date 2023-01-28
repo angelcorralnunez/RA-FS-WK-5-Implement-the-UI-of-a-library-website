@@ -316,17 +316,10 @@ li a {
     grid-template-rows: 50% 50%;
 }
 
-.top-rev-row {
-}
-
 .rev-one {
     display: grid;
     grid-template-columns: 20% 80%;
     height: 80%;
-}
-
-.ovrlp-icon {
-    
 }
 
 .icon-b {
@@ -344,9 +337,6 @@ li a {
     margin-bottom: 5px;
 }
 
-.icon-stars {
-}
-
 .check-mrk-icon {
     position: relative;
     z-index: 2;
@@ -361,9 +351,6 @@ li a {
 
 .rev-par-1 {
     margin-top: 40px;
-}
-
-.bot-rev-row {
 }
 
 .rev-two {
@@ -390,7 +377,6 @@ footer {
     max-width: 1440px;
     display: grid; 
     background: #F5F5F5;
-    
 }
 
 .footer-cont {

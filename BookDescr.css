@@ -105,7 +105,7 @@ nav a {
     margin: 35px 40px 40px 80px;
     padding: 0;
     font-size: 18px;
-    background: #F5F5F5;
+    background: #D9D9D9;
 }
 
 .form {
@@ -194,36 +194,48 @@ li a {
 }
 
 .book-desc-main-cont {
-    border: 2px solid red;
+    border: 2px solid blue;
     background: #F5F5F5;
     display: grid;
     grid-template-rows: 1fr 9fr;
 }
 
 .title-auth-cont {
-    border: 2px solid lime;
-    
+    padding-left: 50px;
 }
 
 #h2-war-wrlds {
-    border: 2px solid fuchsia;
+    color: #036DE9;
+    font-weight: 600;
+    font-size: 40px; 
+    margin-bottom: 5px;
 }
 
 #h3-hg-wells {
-    border: 2px solid black;
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 0;
 }
 
 .book-desc-col-cont {
     background: red;
     border: 2px solid purple;
-    
-    
+    display: grid;
+    grid-template-columns: 30% 70%;    
 }
 
-
+.book-desc-row-cont {
+    background: aqua;
+    border: 2px solid purple;
+    display: grid;
+    grid-template-rows: 15% 10% 75%;    
+}
 
 .book-img-cont {
     border: 2px solid pink;
+    height: 250px;
+    width: 199px;
+    padding-left: 50px;
 }
 
 #war-worlds-pic {
@@ -232,15 +244,37 @@ li a {
 }
 
 .rd-nw-btn-cont {
-    border: 2px solid green;
+    display: grid;
+    max-height: 59px;
+    max-width: 214px;
+    padding-left: 50px;
 }
 
 .read-now-button {
-    border: 2px solid orange;
+    background: #036DE9;
+    color: #FFFFFF;
+    border: 2px solid invisible;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 15px 40px;
 }
 
 .dwnld-btn-cont {
-    border: 2px solid blue;
+    display: grid;
+    max-height: 59px;
+    max-width: 214px; 
+    padding-left: 50px;
+}
+
+.dwnld-button {
+    background: #3A3838;
+    color: #FFFFFF;
+    border: 2px solid invisible;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 15px 40px;
 }
 
 .book-rev-col {

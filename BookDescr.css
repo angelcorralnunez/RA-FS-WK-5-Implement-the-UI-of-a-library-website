@@ -294,15 +294,20 @@ li a {
 }
 
 .ratings-rev-cont {
-    border: 2px solid black;
+    border-top: 1px solid #000000;
+    margin-right: 100px;
 }
 
-#h5-rate-rev {
-    border: 2px solid fuchsia;
+#h4-rate-rev {
+    color: #036DE9;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.star-icons {
-    border: 2px solid lime;
+#h5-read-rev {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .review-grid-cont {
@@ -310,7 +315,7 @@ li a {
 }
 
 .top-rev-row {
-    border: 2px dashed red;
+    border: 2px dashed blue;
 }
 
 .rev-one {
@@ -318,7 +323,9 @@ li a {
 }
 
 .icon-b {
-    border: 2px solid blue;
+    border: 1px solid #f00;
+    position: relative;
+    z-index: 2;
 }
 
 .ver-reader {
@@ -331,6 +338,10 @@ li a {
 
 .check-mrk-icon {
     order: 2px solid lime;
+    position: relative;
+    z-index: 1;
+    top: -12px;
+    left: -12px;
 }
 
 .opinion-1 {
@@ -350,7 +361,9 @@ li a {
 }
 
 .icon-k {
-    border: 2px solid blue;
+    border: 1px solid #f00;
+    position: relative;
+    z-index: 2;
 }
 
 .opinion-2 {

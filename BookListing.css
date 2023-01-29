@@ -185,6 +185,7 @@ input {
     font-family: 'Lemonada', serif;
     font-size: 32px;
     font-weight: bold;
+    margin: auto;
     margin-top: 0;
 }
 
@@ -232,75 +233,248 @@ input {
     margin-bottom: 0;
 }
 
-.btm-home-grid {
+.main-cont {
+    border: 2px solid red;
     display: grid;
-    grid-template-columns: 60% 40%;
-    max-width: 1440px;
+    grid-template-columns: 18% 82%;
+    width: 1440px;
 }
 
-.know-cont {
-    display: grid;
-    grid-template-rows: 30% 50% 20%;
-    max-width: 850px;
-}
-
-h3 {
-    font-size: 32px;
-    display: grid;
-    margin: auto;
-    padding-top: 40px;
-    font-family: 'Lemonada', serif;
-}
-
-p {
-    font-size: 20px;
-    margin: auto;
-    text-align: center;
+.menu-col-cont {
+    border: 1px solid #000000;
     font-family: 'Inter', sans-serif;
+    background: #D9D9D9;
 }
 
-.strt-btn-cont {
+#h3-pop-rds {
+    display: table;
+    border-bottom: 1px solid #000000;
+    padding: 30px 15px 5px 15px;
+    color: #036DE9;
+    margin: auto;
+    
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#h3-fic {
+    display: table;
+    border-bottom: 1px solid #000000;
+    padding: 30px 60px 5px 60px;
+    color: #036DE9;
+    margin: auto;
+}
+
+#h3-non-fic {
+    display: table;
+    border-bottom: 1px solid #000000;
+    padding: 30px 35px 5px 35px;
+    color: #036DE9;
+    margin: auto;
+}
+
+.book-desc-main-cont {
+    background: #F5F5F5;
     display: grid;
-    max-height: 53px;
-    max-width: 213px;
-    margin: auto;   
+    grid-template-rows: 1fr 9fr;
 }
 
-.strt-rd-btn {
-    background: #000000;
+.title-auth-cont {
+    padding-left: 100px;
+}
+
+#h2-war-wrlds {
+    color: #036DE9;
+    font-weight: 600;
+    font-size: 40px; 
+    margin-bottom: 5px;
+}
+
+#h3-hg-wells {
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.book-desc-col-cont {
+    display: grid;
+    grid-template-columns: 35% 65%;   
+}
+
+.book-desc-row-cont {
+    display: grid;
+    grid-template-rows: 15% 10% 75%;    
+}
+
+.book-img-cont {
+    height: 250px;
+    width: 199px;
+    padding-left: 100px;
+    margin-left: 8px;
+}
+
+#war-worlds-pic {
+    width: 199px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.rd-nw-btn-cont {
+    display: grid;
+    max-height: 59px;
+    max-width: 214px;
+    padding-left: 100px;
+    margin-top: 90px;
+}
+
+.read-now-button {
+    background: #036DE9;
     color: #FFFFFF;
-    border: 2px solid invisible;
+    border: 2px solid #036DE9;
     border-radius: 10px;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     padding: 15px 40px;
-    
 }
 
-.solo-tab-cont {
-    align-items: left;
-    padding-top: 30px;
-    width: 349px;
-    height: 330px;
-}
-
-.solo-tab {
+.dwnld-btn-cont {
     display: grid;
-    border-radius: 12px;
+    max-height: 59px;
+    max-width: 214px; 
+    padding-left: 100px;
+    margin-top: 40px;
+}
+
+.dwnld-button {
+    background: #3A3838;
+    color: #FFFFFF;
+    border: 2px solid #3A3838;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 15px 40px;
+}
+
+.book-rev-col {
+    background: #F5F5F5;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 2.5fr;
+    width: 100%;
+    height:100%;
+}
+
+.bk-desc-p-cont {
+    font-size: 26px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.main-p {
+    margin-top: 0;
+}
+
+.ratings-rev-cont {
+    border-top: 1px solid #000000;
+    margin-right: 100px;
+    margin-bottom: 0;
+}
+
+#h4-rate-rev {
+    color: #036DE9;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#h5-read-rev {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.review-grid-cont {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.rev-one {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 80%;
+}
+
+.icon-b {
+    position: relative;
+    z-index: 1;
+}
+
+.rev-txt-area {
+    margin: auto;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+.ver-reader {
+    margin-bottom: 5px;
+}
+
+.check-mrk-icon {
+    position: relative;
+    z-index: 2;
+    top: 5px;
+    left: -29px;
+}
+
+.opinion-1 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.rev-par-1 {
+    margin-top: 40px;
+}
+
+.rev-two {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 80%;
+}
+
+.icon-k {
+    position: relative;
+    z-index: 1;
+}
+
+.opinion-2 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.rev-par-2 {
+    margin-top: 40px;
 }
 
 footer {
+    border: 2px solid blue;
     max-width: 1440px;
     display: grid;
 }
 
 .footer-cont {
+    border: 2px solid yellow;
     display: grid;
     margin: auto;                                               
     grid-template-columns: 100%;
 }
 
 .ftr-txt {
+    border: 2px solid lime;
     font-size: 18px;
-    padding: 60px 8px 0 8px; 
+   
 }

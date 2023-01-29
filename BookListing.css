@@ -394,10 +394,14 @@ li a {
 }
 
 .bk-title {
-    color: #036DE9;
-    font-size: 32px;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.bk-title a {
+    color: #036DE9;
+    font-size: 32px;
+    text-decoration: none;
 }
 
 .auth-nm {

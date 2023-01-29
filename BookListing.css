@@ -15,12 +15,10 @@ html {
 }
 
 body {
-    border: 2px solid lime;
     display: grid;
     grid-template-rows: 0.5fr 9fr 0.5fr;
     width: 1440px;
     font-family: 'Inter', sans-serif;
-    height: 2650px;
     position: relative;
 }
 
@@ -236,7 +234,6 @@ input {
 }
 
 .main-cont {
-    border: 2px solid red;
     display: grid;
     grid-template-columns: 18% 82%;
     width: 1440px;
@@ -304,21 +301,23 @@ li a {
     background: #F5F5F5;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
+    padding-top: 50px;
 }
 
 .book-one {
     display: grid;
-    grid-template-columns: 1fr 2fr;    
+    grid-template-columns: 1fr 2fr;
+    width: 667px;   
 }
 
 .book-img-cont {
     height: 250px;
-    width: 199px;
+    width: 250px;
     padding-left: 100px;
     margin-left: 8px;
 }
 
-#war-worlds-pic {
+#bk-pic {
     width: 199px;
     height: 250px;
     border-radius: 10px;
@@ -328,8 +327,6 @@ li a {
     display: grid;
     max-height: 59px;
     max-width: 214px;
-    padding-left: 100px;
-    margin-top: 90px;
 }
 
 .read-now-button {
@@ -338,25 +335,7 @@ li a {
     border: 2px solid #036DE9;
     border-radius: 10px;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    padding: 15px 40px;
-}
-
-.dwnld-btn-cont {
-    display: grid;
-    max-height: 59px;
-    max-width: 214px; 
-    padding-left: 100px;
-    margin-top: 40px;
-}
-
-.dwnld-button {
-    background: #3A3838;
-    color: #FFFFFF;
-    border: 2px solid #3A3838;
-    border-radius: 10px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     padding: 15px 40px;
 }
 
@@ -401,21 +380,31 @@ li a {
     grid-template-rows: 50% 50%;
 }
 
-.book-one {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    height: 80%;
-}
-
 .icon-b {
     position: relative;
     z-index: 1;
 }
 
 .book-txt-area {
-    margin: auto;
-    margin-right: 100px;
+    display: grid;
+    grid-template-rows: 15% 15% 45% 25%;
     font-size: 20px;
+    height: 250px;
+    width: 800px;
+}
+
+.bk-title {
+    color: #036DE9;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.auth-nm {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 16px;
 }
 
 .ver-reader {
@@ -432,6 +421,11 @@ li a {
 .opinion-1 {
     font-weight: bold;
     margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    padding-top: 6px;
+    padding-bottom: 4px;
 }
 
 .rev-par-1 {
@@ -459,7 +453,6 @@ li a {
 }
 
 footer {
-    border: 2px dashed blue;
     max-width: 1440px;
     display: grid; 
     background: #F5F5F5;
@@ -467,7 +460,6 @@ footer {
 }
 
 .footer-cont {
-    border: 2px solid rebeccapurple;
     display: grid;
     margin: auto;
     margin-top: 0;                                               
@@ -476,7 +468,6 @@ footer {
 }
 
 .page-cont {
-    border: 2px solid lime;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: auto;    

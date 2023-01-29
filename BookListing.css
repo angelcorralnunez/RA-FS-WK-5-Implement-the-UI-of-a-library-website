@@ -246,8 +246,21 @@ input {
 .menu-col-cont {
     border: 1px solid #000000;
     font-family: 'Inter', sans-serif;
+    font-size: 20px;
     background: #D9D9D9;
-    height: 1646px;
+    display: grid;
+    grid-template-rows: 21% 22% 67%;
+}
+
+.row-1 {
+    margin-top: 25px;
+}
+
+.row-2 {
+    margin-top: 0px;
+}
+.row-3 {
+    margin-top: 0px;
 }
 
 #h3-pop-rds {
@@ -261,7 +274,9 @@ input {
 
 li {
     list-style: none;
+    line-height: 26px;
 }
+
 
 li a {
     text-decoration: none;

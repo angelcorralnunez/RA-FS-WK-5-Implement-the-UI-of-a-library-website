@@ -303,34 +303,12 @@ li a {
 .book-desc-main-cont {
     background: #F5F5F5;
     display: grid;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: repeat(5, 1fr);
 }
 
-.title-auth-cont {
-    padding-left: 100px;
-}
-
-#h2-war-wrlds {
-    color: #036DE9;
-    font-weight: 600;
-    font-size: 40px; 
-    margin-bottom: 5px;
-}
-
-#h3-hg-wells {
-    font-weight: 300;
-    font-size: 24px;
-    margin-top: 0;
-}
-
-.book-desc-col-cont {
+.book-one {
     display: grid;
-    grid-template-columns: 35% 65%;   
-}
-
-.book-desc-row-cont {
-    display: grid;
-    grid-template-rows: 15% 10% 75%;    
+    grid-template-columns: 1fr 2fr;    
 }
 
 .book-img-cont {
@@ -423,7 +401,7 @@ li a {
     grid-template-rows: 50% 50%;
 }
 
-.rev-one {
+.book-one {
     display: grid;
     grid-template-columns: 20% 80%;
     height: 80%;
@@ -434,7 +412,7 @@ li a {
     z-index: 1;
 }
 
-.rev-txt-area {
+.book-txt-area {
     margin: auto;
     margin-right: 100px;
     font-size: 20px;

@@ -15,12 +15,13 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 0;
-    background: #D9D9D9;
+    border: 2px solid lime;
+    display: grid;
+    grid-template-rows: 0.5fr 9fr 0.5fr;
+    width: 1440px;
     font-family: 'Inter', sans-serif;
+    height: 2650px;
+    position: relative;
 }
 
 .navbar-main {
@@ -29,12 +30,13 @@ body {
     width: 1440px;
     height: 112px;
     padding: 5px;
-    height: 112px;
+    height: 116px;
     flex-shrink: 0;
     box-sizing:border-box;
     border: 1px solid invisible;
-    background-color: #3A3838;
+    background: #3A3838;
     color: #FFFFFF;
+    margin-bottom: 0;
 }
 
 nav a {
@@ -144,7 +146,6 @@ input {
 .upper-hero-area {
     background: #020202;
     width: 1440px;
-    max-height: 704px;
 }
 
 .hero-cont {
@@ -172,12 +173,12 @@ input {
 }
 
 .icon-cont {
-    height: 215px;
+    height: 200px;
     width: 1440px;
     background: #020202;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .icon-txt {
@@ -192,6 +193,7 @@ input {
 .book-icon-cont {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    height: 60%;
 }
 
 .bookshelf {
@@ -238,12 +240,14 @@ input {
     display: grid;
     grid-template-columns: 18% 82%;
     width: 1440px;
+    height: 1646px;
 }
 
 .menu-col-cont {
     border: 1px solid #000000;
     font-family: 'Inter', sans-serif;
     background: #D9D9D9;
+    height: 1646px;
 }
 
 #h3-pop-rds {
@@ -461,20 +465,23 @@ li a {
 }
 
 footer {
-    border: 2px solid blue;
+    border: 2px dashed blue;
     max-width: 1440px;
-    display: grid;
+    display: grid; 
+    background: #F5F5F5;
+    height: 142px;
 }
 
 .footer-cont {
-    border: 2px solid yellow;
     display: grid;
     margin: auto;                                               
     grid-template-columns: 100%;
 }
 
 .ftr-txt {
-    border: 2px solid lime;
     font-size: 18px;
+    padding: 60px 8px 0 8px;
    
 }
+
+

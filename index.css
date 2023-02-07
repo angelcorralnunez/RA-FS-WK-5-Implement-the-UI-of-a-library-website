@@ -31,25 +31,19 @@ body {
     background: #D9D9D9;
     font-family: 'Inter', sans-serif;
 }
-
+/*
 .navbar-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*grid-template-columns: repeat(7, 2fr);*/
+    grid-template-columns: repeat(7, 2fr);
     width: 100%;
     height: 112px;
     padding: 5px;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
     height: 112px;
-=======
->>>>>>> 4cdfda3 (Update index.css)
     flex-shrink: 0;
     box-sizing:border-box;
-=======
     box-sizing: border-box;
->>>>>>> Stashed changes
     border: 1px solid invisible;
     background-color: #3A3838;
     color: #FFFFFF
@@ -118,43 +112,43 @@ a.active, a:hover {
 }
 
 .home {
-    /*display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;*/
-}
-
-.about {
-    /*display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;*/
-}
-
-.reg {
-    /*display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;*/
-}
-
-.ebooks {
-    /*display: inline-block; 
+    display: inline-block;
     margin: 40px 40px 40px 80px;
     padding: 0;
     font-size: 18px;
-    white-space: nowrap;*/
+}
+
+.about {
+    display: inline-block;
+    margin: 40px 40px 40px 80px;
+    padding: 0;
+    font-size: 18px;
+}
+
+.reg {
+    display: inline-block;
+    margin: 40px 40px 40px 80px;
+    padding: 0;
+    font-size: 18px;
+}
+
+.ebooks {
+    display: inline-block; 
+    margin: 40px 40px 40px 80px;
+    padding: 0;
+    font-size: 18px;
+    white-space: nowrap;
 }
 
 .search-ebooks {
-    /*display: inline-block; 
+    display: inline-block; 
     width: 220px;
     height: 36px;
     border-radius: 12px;
     margin: 35px 40px 40px 80px;
     padding: 0;
     font-size: 18px;
-    background: #D9D9D9;*/
+    background: #D9D9D9;
 }
 
 .form {
@@ -270,14 +264,14 @@ footer {
 }
 
 
-/* Mobile (Smartphone) max-width: 480px
+/*Mobile (Smartphone) max-width: 480px
   Low Resolution Tablets and ipads max-width: 767px
   Tablets Ipads portrait mode max-width:1024px
   Desktops max-width:1280px
   Huge size (Larger screen) max-width: 1281px and greater */
 
 
-@media screen and (max-width: 720px){
+/*@media screen and (max-width: 720px){
     
 @font-face
 fon-family: 'Lemonada';
@@ -366,7 +360,6 @@ nav ul li {
     display: block;
     line-height: 80px;
     margin: 50px 0;
-    line-height: 30px;
 }
 
 nav ul li a {
@@ -431,41 +424,6 @@ margin: 20px 35px 0 35px;
 }
 
 .home {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-border: 2px solid pink;
->>>>>>> 4cdfda3 (Update index.css)
-display: inline-block;
-margin: 40px 40px 40px 80px;
-padding: 0;
-font-size: 18px;
-}
-
-.about {
-border: 2px solid plum;
-display: inline-block;
-margin: 40px 40px 40px 80px;
-padding: 0;
-font-size: 18px;
-}
-
-.reg {
-border: 2px solid purple;
-display: inline-block;
-margin: 40px 40px 40px 80px;
-padding: 0;
-font-size: 18px; 
-}
-
-.ebooks {
-border: 2px solid blue;
-display: inline-block; 
-margin: 40px 40px 40px 80px;
-padding: 0;
-font-size: 18px;
-white-space: nowrap;
-=======
     display: inline-block;
     margin: 40px 40px 40px 80px;
     padding: 0;
@@ -483,28 +441,26 @@ white-space: nowrap;
     display: inline-block;
     margin: 40px 40px 40px 80px;
     padding: 0;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .ebooks {
-    display: inline-block; 
+    /*display: inline-block; 
     margin: 40px 40px 40px 80px;
     padding: 0;
     font-size: 18px;
     white-space: nowrap;
->>>>>>> Stashed changes
 }
 
 .search-ebooks {
-border: 2px solid aqua;
-display: inline-block; 
-width: 220px;
-height: 36px;
-border-radius: 12px;
-margin: 35px 40px 40px 80px;
-padding: 0;
-font-size: 18px;
-background: #D9D9D9;
+    display: inline-block; 
+    width: 220px;
+    height: 36px;
+    border-radius: 12px;
+    margin: 35px 40px 40px 80px;
+    padding: 0;
+    font-size: 18px;
+    background: #D9D9D9;
 }
 
 .form {
@@ -626,6 +582,9 @@ padding: 60px 8px 0 8px;
 
 }
 
+*/
+
+
 @media screen and (max-width: 400px){
     
     @font-face
@@ -648,8 +607,8 @@ padding: 60px 8px 0 8px;
         margin: 0;
         height: 100%;
         padding: 0;
-        min-width: 400px;
-        max-width: 1440px;
+        min-width: 300px;
+        max-width: 400px;
     }
     
     body {
@@ -663,24 +622,9 @@ padding: 60px 8px 0 8px;
     
     .navbar-main {
     border: 2px solid purple;
-    display: grid;
-    grid-template-columns: repeat(7, 2fr);
-    <<<<<<< HEAD
-    <<<<<<< Updated upstream
-    width: 1440px;
-    =======
-    width: 100%;
-    >>>>>>> Stashed changes
-    =======
-    width: 720px;
-    >>>>>>> 4cdfda3 (Update index.css)
-    height: 112px;
-    padding: 5px;
-    flex-shrink: 0;
-    box-sizing:border-box;
-    border: 1px solid invisible;
-    background-color: #3A3838;
-    color: #FFFFFF;
+    
+    flex-direction: column;
+    align-items: flex-start;
     }
     
     .toggle-button .bar {
@@ -695,17 +639,22 @@ padding: 60px 8px 0 8px;
     }
     
     .navbar-links {
-        display: none;
+        /*display: none;*/
+        width: 100%;
+        flex-direction: column;
+        list-style: none!important;
     }
     
     nav a {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
+        color: #FFFFFF;
+        background-color: transparent;
+        text-decoration: none;
     }
+
     nav ul {
-        float: right;
-        margin-right: 20px;
+        width: 100%;
+        flex-direction: column;
+        list-style: none;
     }
     
     nav ul li {
@@ -741,23 +690,18 @@ padding: 60px 8px 0 8px;
     }
     
     .e-logo-cont {
-    <<<<<<< HEAD
-    <<<<<<< Updated upstream
-    =======
     border: 2px solid red;
-    >>>>>>> 4cdfda3 (Update index.css)
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 141px;
     height: 64px;
     margin: 20px 35px 0 35px;
-    =======
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 141px;
-        height: 64px;
-        margin: 20px 35px 0 35px;
-    >>>>>>> Stashed changes
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    height: 64px;
+    width: 141px;
+    margin: 20px 35px 0 35px;
+  
     }
     
     #e-logo {
@@ -777,80 +721,43 @@ padding: 60px 8px 0 8px;
     }
     
     .home {
-    <<<<<<< HEAD
-    <<<<<<< Updated upstream
-    =======
-    border: 2px solid pink;
-    >>>>>>> 4cdfda3 (Update index.css)
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
+        /*display: inline-block;
+        margin: 40px 40px 40px 80px;
+        padding: 0;
+        font-size: 18px;*/
     }
     
     .about {
-    border: 2px solid plum;
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
+        /*display: inline-block;
+        margin: 40px 40px 40px 80px;
+        padding: 0;
+        font-size: 18px;*/
     }
     
     .reg {
-    border: 2px solid purple;
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px; 
+        /*display: inline-block;
+        margin: 40px 40px 40px 80px;
+        padding: 0;
+        font-size: 18px;*/
     }
     
     .ebooks {
-    border: 2px solid blue;
-    display: inline-block; 
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
-    white-space: nowrap;
-    =======
-        display: inline-block;
+        /*display: inline-block; 
         margin: 40px 40px 40px 80px;
         padding: 0;
         font-size: 18px;
-    }
-    
-    .about {
-        display: inline-block;
-        margin: 40px 40px 40px 80px;
-        padding: 0;
-        font-size: 18px;
-    }
-    
-    .reg {
-        display: inline-block;
-        margin: 40px 40px 40px 80px;
-        padding: 0;
-        font-size: 18px; 
-    }
-    
-    .ebooks {
-        display: inline-block; 
-        margin: 40px 40px 40px 80px;
-        padding: 0;
-        font-size: 18px;
-        white-space: nowrap;
-    >>>>>>> Stashed changes
+        white-space: nowrap;*/
     }
     
     .search-ebooks {
-    border: 2px solid aqua;
-    display: inline-block; 
-    width: 220px;
-    height: 36px;
-    border-radius: 12px;
-    margin: 35px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
-    background: #D9D9D9;
+        /*display: inline-block; 
+        width: 220px;
+        height: 36px;
+        border-radius: 12px;
+        margin: 35px 40px 40px 80px;
+        padding: 0;
+        font-size: 18px;
+        background: #D9D9D9;*/
     }
     
     .form {

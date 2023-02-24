@@ -11,34 +11,71 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="navbar-main">
+        <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive navbar using only html</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->  
+        <nav>
             <div class="e-logo-cont">
-                <div class="e-logo">e</div>
+                <div class="e-logo" id="e-logo">e</div>
                 <div class="reads-logo">READS</div>
-            </div>    
-            <div class="home"><a href="index.html">Home</a></div>
-            <div class="about"><a href="About.html">About</a></div>
-            <div class="reg"><a href="Regis.html">Registration</a></div>
-            <div class="ebooks"><a href="BookListing.html">e-Books</a></div>
-             <div class="search-ebooks">
-                <form action="/" method="GET" class="form">
-                  <button type="submit" class="search-button">
-                    <img src="Assets\magnifying-glass.png">
-                  </button>
-                  <input type="search" placeholder="Search" class="search-field" />
-                </form>
-              </div>
-            <div class="profile-img"><a href="Profile.html"></a><img class="icons" src="https://i.ibb.co/k57Ccpg/iconmonstr-user-19-48.png"></a></div>
-            
-        </nav>
+            </div>
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">E-Books</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="main">
+                <div class="search-ebooks">
+                    <form action="/" method="GET" class="form">
+                    <button type="submit" class="search-button">
+                        <img class="mag" src="Assets\magnifying-glass.png">
+                    </button>
+                    <input type="search" placeholder="Search E-Books" class="search-field" />
+                    </form>
+                </div>
+                <a href="Profile.html"><img class="icons" src="https://i.ibb.co/k57Ccpg/iconmonstr-user-19-48.png"></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </nav> 
         <main>
             <div>
-            <div class="hero-img"><img class="hero-img" src="https://i.ibb.co/sqMrJt3/janko-ferlic-sf-L-QOnmy00-unsplash1440x483wideview.png"></a></div>
+            <div class="hero-img-cont"><img class="hero-img" src="https://i.ibb.co/sqMrJt3/janko-ferlic-sf-L-QOnmy00-unsplash1440x483wideview.png"></a></div>
             </div>
             <div class="btm-home-grid">
                 <div class="know-cont">

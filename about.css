@@ -1,215 +1,412 @@
-@font-face
-    fon-family: 'Lemonada';
-    src: url(Font Lemonada\Lemonada-Regular.ttf) format('truetype');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', cursive;
+}
 
-    @font-face
-    fon-family: 'Inter';
-    src: url(Font Inter\Inter-Black.otf) format('opentype');
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #036DE9;
+}
 
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    min-width: 400px;
-    max-width: 1440px;
+    height: 100vh;
+    width: 100vw;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 0;
-    background: #D9D9D9;
-    font-family: 'Inter', sans-serif;
-}
-
-.navbar-main {
-    display: grid;
-    grid-template-columns: repeat(7, 2fr);
+    background: var(--bg-color);
+    color: var(--text-color);
     width: 1440px;
-    height: 112px;
-    padding: 5px;
-    height: 112px;
-    flex-shrink: 0;
-    box-sizing:border-box;
-    border: 1px solid invisible;
-    background-color: #3A3838;
-    color: #FFFFFF;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-nav a {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
+nav {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: all .50s ease;
 }
 
 .e-logo-cont {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 141px;
-    height: 64px;
-    margin: 20px 35px 0 35px;
+    grid-template-columns: 40% 60%;
+    width: 25%;
+    height: 5vh;
+    justify-content: center;
 }
 
 #e-logo {
-    display: grid | inline-grid;
+    display: grid;
     color: #036DE9;
     text-shadow: 1px 1px #FFFFFF;
-    font-family: 'Lemonada', serif;
-    font-size: 32px;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5rem;
     font-weight: bold;
+    justify-content: flex-end;
+    margin-left: 0px;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    padding-right: 1%;
+    padding-top: 0;
 }
 
 .reads-logo {
-    display: grid | inline-grid;
-    font-family: 'Lemonada', serif;
-    font-size: 32px;
+    display: grid;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5rem;
     font-weight: bold;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
 }
 
-.home {
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    align-items: left;
+    font-size: 1rem;
 }
 
-.about {
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+    width: 100%;
+    text-decoration: none;
 }
 
-.reg {
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px; 
+.navbar a:hover {
+    color: var(--main-color);
 }
 
-.ebooks {
-    display: inline-block; 
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
-    white-space: nowrap;
+.navbar a.active {
+    color: var(--main-color);
+}
+
+nav ul.navbar {
+    width: 50vw;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    width: 25%;
+    height: 90vh;
+}
+
+.main a {
+    width: 50%;
+    margin-left: 10%;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
 }
 
 .search-ebooks {
-    display: inline-block; 
-    width: 220px;
-    height: 36px;
+    display: grid; 
+    width: 80%;
+    height: 4vh;
     border-radius: 12px;
-    margin: 35px 40px 40px 80px;
+    margin-left: 10%;
     padding: 0;
-    font-size: 18px;
+    font-size: 0.5rem;
     background: #D9D9D9;
+    justify-content: flex-start;
 }
 
 .form {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .search-field {
-    width: 100%;
-    padding: 10px 15px 10px 35px;
+    display: flex;
+    width: 90%;
+    max-height: 100%;
+    padding: 0;
     border: none;
     border-radius: 100px;
     outline: none;
+    align-items: center;
   }
   
   .search-button {
     background: transparent;
     border: none;
     outline: none;
-    margin: 5px 0 2px 5px;
   }
   
   .search-button img {
     width: 18px;
     height: 18px;
     object-fit: cover;
+    margin-top: 4px; 
+  }
+
+  .mag {
+    justify-content: flex-start;
   }
 
 input {
-    padding-left: 5px;
     background: #D9D9D9;
+    font-size: 1.5em;
+    margin-left: 5%;
+    }
+
+.user {
+    display: flex;
+    align-items: center;
 }
 
-.profile-img {
-    margin: auto;
+.user i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
 }
+
+.main a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+} 
 
 .mid-cont {
     display: grid;
-    grid-template-columns: 52.2% 5% 30%;
-    width: 1440px;
+    grid-template-columns: 70% 30%;
+    max-width: 100%;
 }
 
 .txt-cont {
-    font-family: 'Lemonada', serif;
-    font-weight: bold;
+    font-family: 'Lilita One', cursive;
     display: grid;
     grid-template-rows: 15% 70% 15%;
+    width: 100%;
 }
 
 h1 {
     margin: auto;
-    padding-top: 50px;
+    padding-top: 10%;
 }
 
 .par-cont {
+    display: block;
     margin: auto;
     text-align: left;
-    padding: 30px 0px 30px 60px;
 }
 
 #e {
-    font-size: 22px;
+    font-size: 1.5rem;
     margin: auto;
     color: #036DE9;
-    font-family: 'Lemonada', serif;
+    font-family: 'Lilita One', cursive;
     display: inline;
 }
 
 .par-txt {
-    font-size: 22px;
+    font-size: 1.5rem;
     margin: auto;
     display: inline;
 }
 
 .contact {
-    font-size: 22px;
-    padding: 0px 0px 0px 70px;
+    font-size: 1.5rem;
+    display: block;
+    margin-left: 25%;
 }
 
 .img-cont {
     display: grid;
-    width: 595px;
-    height: 830px;
-    
+    width: 100%;
+    height: 100%;
 }
 
 .ldr-img {
-    margin: auto;
-    width: 595px;
-    height: 830px;
+    display: grid;
+    width: 100%;
+    height: 100%;
     object-fit: fill;
+    justify-content: center;
 }
 
 footer {
-    max-width: 1440px;
-    display: grid;
+    max-width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-cont {
-    display: grid;
-    margin: auto;                                               
-    grid-template-columns: 100%;
+    margin-top: 1%;
 }
 
 .ftr-txt {
-    font-size: 18px;
-    padding: 40px 8px 0 8px; 
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .par-cont {
+        padding: 10%;
+    }
+
+    .contact {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10%;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    body {
+        max-width: 100vw;
+        margin: 0;
+    }
+
+        .navbar {
+            position: absolute;
+            top: 10%;
+            right: 2%;
+            background: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-radius: 10px;
+            transition: all .50s ease;
+        }
+
+        nav ul.navbar {
+            width: 40vw;
+            padding: 0;
+        }
+
+        .navbar a {
+            display: block;
+            margin: 5px 0;
+            padding: 0px 25px;
+            transition: all .50s ease;
+        }
+
+        .navbar a:hover {
+            color: var(--text-color);
+            transform: translateY(5px);
+        }
+
+        .navbar a.active {
+            color: var(--text-color);
+    
+        }
+
+        .navbar.open {
+            right: 2%;
+        }
+
+
+    .e-logo-cont {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        width: 33.33%;
+        height: 5vh;
+        justify-content: center;
+    }
+
+    #e-logo {
+        font-size: 1.25rem;
+        padding-right: 1%;
+        padding-bottom: 4%;
+    }
+
+    .reads-logo {
+        display: grid;
+        font-size: 1.25rem;
+        font-weight: bold;
+        width: 100%;
+        height: 5vh;
+        padding-top: 5px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 70% 15% 15%;
+        align-items: center;
+        width: 66.66%;
+    
+    }
+
+    .main a {
+        display: grid;
+        width: 100%;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    #menu-icon {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    
+    }
+
+    .search-ebooks {
+        width: 50%;
+        margin-left: 35%;
+    }
+
+    form {
+        align-items: flex-end;
+    }
+
+    .mid-cont {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+        width: 100%;
+    }
+
+    .txt-cont {
+        font-family: 'Lilita One', cursive;
+        display: grid;
+        grid-template-rows: 15% 70% 15%;
+    }
+
+    .img-cont {
+        display: grid;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        width: 100vw;
+        margin-top: 8%
+    }
+
+    .footer-cont {
+        padding-top: 2%;
+    }
+
+    .ftr-txt {
+        display: grid;
+        font-size: .75em;
+        display: inline;
+        white-space: nowrap;
+    }
+
 }

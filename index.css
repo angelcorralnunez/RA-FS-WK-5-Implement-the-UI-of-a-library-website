@@ -2,7 +2,6 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Lilita One', cursive;
     }
     
     :root{
@@ -69,6 +68,7 @@
     }
     
     .navbar {
+        font-family: 'Roboto', sans-serif;
         display: grid;
         grid-template-columns: repeat(5, 20%);
         align-items: left;
@@ -274,6 +274,7 @@ p {
 }
 
 footer {
+    font-family: 'Roboto', sans-serif;
     max-width: 100%;
     height: 5vh;
     display: flex;

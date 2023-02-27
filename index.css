@@ -446,7 +446,7 @@ footer {
 
 @media only screen and (max-width: 700px) {
    
-    br {
+    .hm-br {
         display: none;
     }
     .strt-btn-cont {

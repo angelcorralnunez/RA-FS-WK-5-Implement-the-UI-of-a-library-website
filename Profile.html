@@ -10,39 +10,77 @@
         <title>eReads</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="Profile.css"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="navbar-main">
+        <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive navbar using only html</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Profile.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->  
+        <nav>
             <div class="e-logo-cont">
                 <div class="e-logo" id="e-logo">e</div>
                 <div class="reads-logo">READS</div>
-            </div>    
-            <div class="home"><a href="index.html">Home</a></div>
-            <div class="about"><a href="About.html">About</a></div>
-            <div class="reg"><a href="Regis.html">Registration</a></div>
-            <div class="ebooks"><a href="BookListing.html">e-Books</a></div>
-             <div class="search-ebooks">
-                <form action="/" method="GET" class="form">
-                  <button type="submit" class="search-button">
-                    <img src="Assets\magnifying-glass.png">
-                  </button>
-                  <input type="search" placeholder="Search" class="search-field" />
-                </form>
-              </div>
-            <div class="profile-img"><a href="Profile.html"></a><img class="icons" src="https://i.ibb.co/k57Ccpg/iconmonstr-user-19-48.png"></a></div>
-            
-        </nav>
+            </div>
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">E-Books</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="main">
+                <div class="search-ebooks">
+                    <form action="/" method="GET" class="form">
+                    <button type="submit" class="search-button">
+                        <img class="mag" src="Assets\magnifying-glass.png">
+                    </button>
+                    <input type="search" placeholder="Search E-Books" class="search-field" />
+                    </form>
+                </div>
+                <a href="Profile.html"><img class="icons" src="https://i.ibb.co/k57Ccpg/iconmonstr-user-19-48.png"></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </nav> 
         <main>
             <div class="upper-txt-box">
                 <h2>My Account</h2>
                 <h3>Downloads</h3>
             </div>
             <div class="top-grid-row">
-                <div></div>
                 <div class="box-one">
                     <div>
                     <iconify-icon class="bookshelf" icon="mdi:bookshelf" style="color: #3a3838;" width="62" height="56"></iconify-icon>
@@ -52,7 +90,6 @@
                         <p class="numbers">12</p>
                     </div>
                 </div>
-                <div></div>
                 <div class="box-two">
                     <div>
                         <iconify-icon class="headphones" icon="ic:baseline-headphones" style="color: #3a3838;" width="62" height="56"></iconify-icon>
@@ -62,7 +99,6 @@
                         <p class="numbers">9</p>
                     </div>
                 </div>
-                <div></div>
                 <div class="box-three">
                     <div>
                         <iconify-icon class="musical-note" icon="fluent-emoji-high-contrast:musical-note" style="color: #3a3838;" width="62" height="56"s></iconify-icon>
@@ -72,10 +108,8 @@
                         <p class="numbers">5</p>
                     </div>
                 </div>
-                <div></div>
             </div>
             <div class="bot-grid-row">
-                <div></div>
                 <div class="box-four">
                     <div>
                         <iconify-icon class="heart-multiple" icon="mdi:heart-multiple" style="color: #3a3838;" width="62" height="56"></iconify-icon>
@@ -85,7 +119,6 @@
                         <p class="numbers">23</p>
                     </div>
                 </div>
-                <div></div>
                 <div class="box-five">
                     <div>
                         <iconify-icon class="microphone" icon="mdi:microphone" style="color: #3a3838;" width="62" height="56"></iconify-icon>
@@ -95,7 +128,6 @@
                         <p class="numbers">0</p>
                     </div>
                 </div>    
-                <div></div>
                 <div class="box-six">
                     <div>
                         <iconify-icon class="person" icon="material-symbols:person" style="color: #3a3838;" width="62" height="56"></iconify-icon>
@@ -105,14 +137,13 @@
                         <p id="update">Update your<br>personal details or<br>password.</p>
                     </div> 
                 </div>
-                <div></div>
             </div>
         </main>
         <footer>
             <div class="footer-cont">
                 <div class="ftr-txt">Privacy | Copyright | Terms of Use & Licenses | Authors | Publishers</div>
             </div>
-            </footer>
+        </footer>
         <script src="" async defer></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     </body>

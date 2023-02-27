@@ -232,7 +232,7 @@ main {
 
 .welc-e {
     margin: auto;
-    padding-top: 2%;
+    padding-top: 75%;
     padding-left: 25%;
     color: #036DE9;
     width: 100%;
@@ -358,8 +358,7 @@ input {
 .img-cont {
     display: flex;
     height: 100%;
-    min-width: 50vw;
-    max-width: 50vw;
+    width: 100%;
     margin: 0; 
     padding: 0;
     flex-grow: 1;
@@ -368,8 +367,8 @@ input {
 }
 
 .ldr-img {
-    min-width: 50vw;
-    max-width: 50vw;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     overflow: hidden;
 }
@@ -446,7 +445,7 @@ footer {
     #e-logo {
         font-size: 1.25rem;
         padding-right: 1%;
-        padding-bottom: 4%;
+        padding-bottom: 0;
     }
 
     .reads-logo {
@@ -489,7 +488,66 @@ footer {
         align-items: flex-end;
     }
 
+    .welcome {
+        grid-template-columns: 60% 5% 35%;
+    }
     
+    .welc-to {
+        text-align: right;
+        padding: 10% 1% 15% 0; 
+    }
+    
+    .welc-e {
+        text-align: center;
+        margin: auto;
+        padding-top: 0%;
+        padding-bottom: 55%;
+        padding-left: 20%;
+    }
+    
+    .welc-rds {
+        text-align: left;
+        padding: 18% 0 5% 5%;
+    }
+
+    .sign-up {
+        text-align: center;
+        white-space: nowrap;
+    }
+    
+    .form-box p {
+        margin: 2% 0 2% 15%;
+    
+    }
+
+    .t-and-c-txt { 
+        width: 70%;
+        align-items: left;
+    }
+
+    .btn-cont {
+        height: 50%;
+        width: 25%; 
+        margin: 10% 0 0 38%;
+    }
+    
+    .btn-box {
+        font-family: 'Roboto', sans-serif;
+        height: 100%;
+        width: 100%;
+        margin: auto; 
+    }
+    
+    .profile-btn {
+        background: #000000;
+        color: #FFFFFF;
+        min-height: 100%;
+        min-width: 100%;
+        border: 5px solid invisible;
+        border-radius: 12px;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.75rem;
+    }
 
     footer {
         width: 100vw;

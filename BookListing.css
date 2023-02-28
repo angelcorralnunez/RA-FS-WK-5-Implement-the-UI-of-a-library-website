@@ -1,160 +1,212 @@
-@font-face
-    fon-family: 'Lemonada';
-    src: url(Font Lemonada\Lemonada-Regular.ttf) format('truetype');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     /* font-family: 'Lilita One', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+}
 
-    @font-face
-    fon-family: 'Inter';
-    src: url(Font Inter\Inter-Black.otf) format('opentype');
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #036DE9;
+}
 
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    min-width: 400px;
-    max-width: 1440px;
+    height: 100vh;
+    width: 100vw;
 }
 
 body {
-    display: grid;
-    grid-template-rows: 0.5fr 9fr 0.5fr;
+    background: var(--text-color);
+    color: var(--bg-color);
     width: 1440px;
-    font-family: 'Inter', sans-serif;
-    position: relative;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.navbar-main {
-    display: grid;
-    grid-template-columns: repeat(7, 2fr);
-    width: 1440px;
-    height: 112px;
-    padding: 5px;
-    height: 116px;
-    flex-shrink: 0;
-    box-sizing:border-box;
-    border: 1px solid invisible;
-    background: #3A3838;
-    color: #FFFFFF;
-    margin-bottom: 0;
-}
-
-nav a {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
+nav {
+    background: #222327 !important;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: all .50s ease;
 }
 
 .e-logo-cont {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 141px;
-    height: 64px;
-    margin: 20px 35px 0 35px;
+    grid-template-columns: 40% 60%;
+    width: 25%;
+    height: 5vh;
+    justify-content: center;
 }
 
 #e-logo {
-    display: grid | inline-grid;
+    display: grid;
     color: #036DE9;
     text-shadow: 1px 1px #FFFFFF;
-    font-family: 'Lemonada', serif;
-    font-size: 32px;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5rem;
     font-weight: bold;
+    justify-content: flex-end;
+    margin-left: 0px;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    padding-right: 1%;
+    padding-top: 0;
 }
 
 .reads-logo {
-    display: grid | inline-grid;
-    font-family: 'Lemonada', serif;
-    font-size: 32px;
+    display: grid;
+    font-family: 'Lilita One', cursive;
+    color: #FFFFFF;
+    font-size: 1.5rem;
     font-weight: bold;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
 }
 
-.home {
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    align-items: left;
+    font-size: 1rem;
 }
 
-.about {
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+    width: 100%;
+    text-decoration: none;
 }
 
-.reg {
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px; 
+.navbar a:hover {
+    color: var(--main-color);
 }
 
-.ebooks {
-    display: inline-block; 
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
-    white-space: nowrap;
+.navbar a.active {
+    color: var(--main-color);
+}
+
+nav ul.navbar {
+    width: 50vw;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    width: 25%;
+    height: 90vh;
+}
+
+.main a {
+    width: 50%;
+    margin-left: 10%;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
 }
 
 .search-ebooks {
-    display: inline-block; 
-    width: 220px;
-    height: 36px;
+    display: grid; 
+    width: 80%;
+    height: 4vh;
     border-radius: 12px;
-    margin: 35px 40px 40px 80px;
+    margin-left: 10%;
     padding: 0;
-    font-size: 18px;
+    font-size: 0.5rem;
     background: #D9D9D9;
+    justify-content: flex-start;
 }
 
 .form {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .search-field {
-    width: 100%;
-    padding: 10px 15px 10px 35px;
+    display: flex;
+    width: 90%;
+    max-height: 100%;
+    padding: 0;
     border: none;
     border-radius: 100px;
     outline: none;
+    align-items: center;
   }
   
   .search-button {
     background: transparent;
     border: none;
     outline: none;
-    margin: 5px 0 2px 5px;
   }
   
   .search-button img {
     width: 18px;
     height: 18px;
     object-fit: cover;
+    margin-top: 4px; 
+  }
+
+  .mag {
+    justify-content: flex-start;
   }
 
 input {
-    padding-left: 5px;
     background: #D9D9D9;
+    font-size: 1.5em;
+    margin-left: 5%;
+    }
+
+.user {
+    display: flex;
+    align-items: center;
 }
 
-.profile-img {
-    margin: auto;
+.user i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+.main a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
 }
 
 .upper-hero-area {
+    border: 2px solid red;
     background: #020202;
     width: 1440px;
 }
 
 .hero-cont {
-    max-width: 1440px;
+    border: 2px solid blue;
+    max-width: 100%;
 }
 
 .hero-img {
-    height: 483px;
-    max-width: 1440px;
-    position: relative; 
-    width: 100%; /* for IE 6 */
+    height: 100%;
+    width: 100%; 
 }
 
 #h2-hero-txt {
@@ -163,87 +215,98 @@ input {
     left: 0; 
     width: 100%;
     color: #FFFFFF; 
-    font-family: 'Lemonada', serif;
-    font-size: 34px;
-    font-weight: bold;
-    padding-left: 100px;
+    font-family: 'Lilita One', cursive;
+    font-size: 2rem;
+    padding-left: 5%;
     letter-spacing: -1px;   
 }
 
 .icon-cont {
-    height: 200px;
-    width: 1440px;
+    border: 2px solid lime;
+    height: auto;
+    width: 100%;
     background: #020202;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding-bottom: 40px;
+    grid-template-columns: repeat(6, 1fr); 
+}
+
+space-hldr {
+    border: 2px solid fuchsia;
 }
 
 .icon-txt {
     color: #036DE9;
-    font-family: 'Lemonada', serif;
-    font-size: 32px;
+    font-family: 'Lilita One', cursive;
+    font-size: 2rem;
     font-weight: bold;
     margin: auto;
     margin-top: 0;
 }
 
 .book-icon-cont {
+    border: 2px solid blue;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    height: 60%;
+    height: 100%;
+    align-items: center; 
 }
 
 .bookshelf {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20%;
     margin-bottom: 0;
 }
 
 .audio-icon-cont {
+    border: 2px solid blue;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    align-items: center; 
 }
 
 .headphones {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20%;
     margin-bottom: 0;
 }
 
 .music-icon-cont {
+    border: 2px solid blue;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    align-items: center; 
 }
 
 .musical-note {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20%;
     margin-bottom: 0;
 }
 
 .pod-icon-cont {
+    border: 2px solid blue;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    align-items: center; 
 }
 
 .microphone {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20%;
     margin-bottom: 0;
 }
 
 .main-cont {
     display: grid;
     grid-template-columns: 18% 82%;
-    width: 1440px;
-    height: 1646px;
+    width: 100%;
+    height: 100%;
 }
 
 .menu-col-cont {
     border: 1px solid #000000;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
     background: #D9D9D9;
     display: grid;
     grid-template-rows: 21% 22% 67%;
@@ -251,20 +314,20 @@ input {
 }
 
 .row-1 {
-    margin-top: 25px;
+    margin-top: 5%;
 }
 
 .row-2 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 .row-3 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 #h3-pop-rds {
     display: table;
     border-bottom: 1px solid #000000;
-    padding: 30px 15px 5px 15px;
+    padding: 15% 10% 5% 10%;
     color: #036DE9;
     margin: auto;
     
@@ -272,7 +335,7 @@ input {
 
 li {
     list-style: none;
-    line-height: 26px;
+    line-height: 1.5rem;
 }
 
 
@@ -284,7 +347,7 @@ li a {
 #h3-fic {
     display: table;
     border-bottom: 1px solid #000000;
-    padding: 30px 60px 5px 60px;
+    padding: 15% 10% 5% 10%;
     color: #036DE9;
     margin: auto;
 }
@@ -292,41 +355,47 @@ li a {
 #h3-non-fic {
     display: table;
     border-bottom: 1px solid #000000;
-    padding: 30px 35px 5px 35px;
+    padding: 15% 10% 5% 10%;
     color: #036DE9;
     margin: auto;
 }
 
 .book-desc-main-cont {
-    background: #F5F5F5;
+    background: #FFFFFF;
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    padding-top: 50px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.25fr;
+    padding-top: 5%;
 }
 
 .book-one {
+    border: 5px solid red;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 667px;   
+    grid-template-columns: 1fr 3fr;
+    width: 100%; 
+    margin: auto;
 }
 
 .book-img-cont {
-    height: 250px;
-    width: 250px;
-    padding-left: 100px;
-    margin-left: 8px;
+    border: 2px solid blue;
+    height: 74%;
+    width: 70%;
+    margin: 15%;
 }
 
-#bk-pic {
-    width: 199px;
-    height: 250px;
+.bk-pic {
+    border: 2px solid lime;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
 .rd-nw-btn-cont {
     display: grid;
-    max-height: 59px;
-    max-width: 214px;
+    max-height: 80%;
+    max-width: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 0;
 }
 
 .read-now-button {
@@ -334,9 +403,11 @@ li a {
     color: #FFFFFF;
     border: 2px solid #036DE9;
     border-radius: 10px;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    padding: 15px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    width: 100%;
+    height: 100%;
+    padding: 2% 10%;
 }
 
 .book-rev-col {
@@ -386,11 +457,14 @@ li a {
 }
 
 .book-txt-area {
+    border: 2px solid black;
     display: grid;
     grid-template-rows: 15% 15% 45% 25%;
-    font-size: 20px;
-    height: 250px;
-    width: 800px;
+    font-size: 1.25rem;
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    color: #000000;
 }
 
 .bk-title {
@@ -400,86 +474,60 @@ li a {
 
 .bk-title a {
     color: #036DE9;
-    font-size: 32px;
+    font-size: 2rem;
     text-decoration: none;
 }
 
 .auth-nm {
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
     font-weight: normal;
-    margin-top: 16px;
-}
-
-.ver-reader {
-    margin-bottom: 5px;
-}
-
-.check-mrk-icon {
-    position: relative;
-    z-index: 2;
-    top: 5px;
-    left: -29px;
+    margin-top: 1%;
 }
 
 .opinion-1 {
     font-weight: bold;
-    margin-top: 10px;
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
     font-weight: normal;
-    padding-top: 6px;
-    padding-bottom: 4px;
-}
-
-.rev-par-1 {
-    margin-top: 40px;
-}
-
-.rev-two {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    height: 80%;
-}
-
-.icon-k {
-    position: relative;
-    z-index: 1;
-}
-
-.opinion-2 {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.rev-par-2 {
-    margin-top: 40px;
+    padding: 1%;
 }
 
 footer {
-    max-width: 1440px;
-    display: grid; 
-    background: #F5F5F5;
-    height: 142px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-cont {
-    display: grid;
-    margin: auto;
-    margin-top: 0;                                               
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    margin-top: 1%;
+}
+
+.ftr-txt {
+    font-size: 1rem;
 }
 
 .page-cont {
+    border: 2px solid lime;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin: auto;    
-    margin-left: -50px;                                           
-    font-size: 18px;
-    width: 667px;
-    height: 24px;
+    margin: auto;                                             
+    font-size: 1.15rem;
+    width: 50%;
+    height: 100%;
     padding: 30px 8px 0px 8px;
+}
+
+.page-cont a {
+    text-decoration: none; 
+    color: #000000; 
+}
+
+#one {
+    color: #036DE9;
 }
 
 footer a {
@@ -493,4 +541,120 @@ footer a {
     padding: 40px 8px 0 8px;
 }
 
+@media only screen and (max-width: 1025px) {
+    body {
+        max-width: 100vw;
+        margin: 0;
+    }
 
+        .navbar {
+            position: absolute;
+            top: 10%;
+            right: 2%;
+            background: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-radius: 10px;
+            transition: all .50s ease;
+        }
+
+        nav ul.navbar {
+            width: 40vw;
+            padding: 0;
+        }
+
+        .navbar a {
+            display: block;
+            margin: 5px 0;
+            padding: 0px 25px;
+            transition: all .50s ease;
+        }
+
+        .navbar a:hover {
+            color: var(--text-color);
+            transform: translateY(5px);
+        }
+
+        .navbar a.active {
+            color: var(--text-color);
+    
+        }
+
+        .navbar.open {
+            right: 2%;
+        }
+
+
+    .e-logo-cont {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        width: 33.33%;
+        height: 5vh;
+        justify-content: center;
+    }
+
+    #e-logo {
+        font-size: 1.25rem;
+        padding-right: 1%;
+        padding-bottom: 4%;
+    }
+
+    .reads-logo {
+        display: grid;
+        font-size: 1.25rem;
+        font-weight: bold;
+        width: 100%;
+        height: 5vh;
+        padding-top: 5px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 70% 15% 15%;
+        align-items: center;
+        width: 66.66%;
+    
+    }
+
+    .main a {
+        display: grid;
+        width: 100%;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    #menu-icon {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    
+    }
+
+    .search-ebooks {
+        width: 50%;
+        margin-left: 35%;
+    }
+
+    form {
+        align-items: flex-end;
+    }
+
+
+
+
+    footer {
+        width: 100vw;
+        margin-top: 8%
+    }
+
+    .footer-cont {
+        padding-top: 2%;
+    }
+
+    .ftr-txt {
+        display: grid;
+        font-size: .75em;
+        display: inline;
+        white-space: nowrap;
+    }

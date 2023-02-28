@@ -196,7 +196,7 @@ input {
 .upper-hero-area {
     border: 2px solid red;
     background: #020202;
-    width: 1440px;
+    width: 100%;
 }
 
 .hero-cont {
@@ -537,7 +537,7 @@ footer a {
 }
 
 .ftr-txt {
-    font-size: 18px;
+    font-size: 1rem;
     padding: 40px 8px 0 8px;
 }
 
@@ -640,8 +640,42 @@ footer a {
         align-items: flex-end;
     }
 
+    #h2-hero-txt {
+        font-size: 1.5rem;
+    }
 
+    .icon-txt {
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
 
+    .bookshelf {
+        margin-top: 25%;
+        margin-bottom: 3%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .headphones {
+        margin-top: 25%;
+        margin-bottom: 3%;
+        width: 50%;
+        height: 50%;
+    }
+    
+    .musical-note {
+        margin-top: 25%;
+        margin-bottom: 3%;
+        width: 50%;
+        height: 50%;
+    }
+    
+    .microphone {
+        margin-top: 25%;
+        margin-bottom: 3%;
+        width: 50%;
+        height: 50%;
+    }
 
     footer {
         width: 100vw;
@@ -658,3 +692,8 @@ footer a {
         display: inline;
         white-space: nowrap;
     }
+}
+
+@media only screen and (max-width: 777px) {
+
+}

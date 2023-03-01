@@ -194,13 +194,11 @@ input {
 }
 
 .upper-hero-area {
-    border: 2px solid red;
     background: #020202;
     width: 100%;
 }
 
 .hero-cont {
-    border: 2px solid blue;
     max-width: 100%;
 }
 
@@ -222,16 +220,11 @@ input {
 }
 
 .icon-cont {
-    border: 2px solid lime;
     height: auto;
     width: 100%;
     background: #020202;
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
-}
-
-space-hldr {
-    border: 2px solid fuchsia;
 }
 
 .icon-txt {
@@ -244,7 +237,6 @@ space-hldr {
 }
 
 .book-icon-cont {
-    border: 2px solid blue;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     height: 100%;
@@ -258,7 +250,6 @@ space-hldr {
 }
 
 .audio-icon-cont {
-    border: 2px solid blue;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     align-items: center; 
@@ -271,7 +262,6 @@ space-hldr {
 }
 
 .music-icon-cont {
-    border: 2px solid blue;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     align-items: center; 
@@ -284,7 +274,6 @@ space-hldr {
 }
 
 .pod-icon-cont {
-    border: 2px solid blue;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     align-items: center; 
@@ -317,6 +306,10 @@ space-hldr {
     margin-top: 5%;
 }
 
+#body-mind {
+    display: none;
+}
+
 .row-2 {
     margin-top: 0;
 }
@@ -330,7 +323,6 @@ space-hldr {
     padding: 15% 10% 5% 10%;
     color: #036DE9;
     margin: auto;
-    
 }
 
 li {
@@ -368,7 +360,6 @@ li a {
 }
 
 .book-one {
-    border: 5px solid red;
     display: grid;
     grid-template-columns: 1fr 3fr;
     width: 100%; 
@@ -376,14 +367,12 @@ li a {
 }
 
 .book-img-cont {
-    border: 2px solid blue;
     height: 74%;
     width: 70%;
     margin: 15%;
 }
 
 .bk-pic {
-    border: 2px solid lime;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -511,7 +500,6 @@ footer {
 }
 
 .page-cont {
-    border: 2px solid lime;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: auto;                                             
@@ -597,7 +585,7 @@ footer a {
     #e-logo {
         font-size: 1.25rem;
         padding-right: 1%;
-        padding-bottom: 4%;
+        padding-bottom: 0;
     }
 
     .reads-logo {
@@ -677,6 +665,67 @@ footer a {
         height: 50%;
     }
 
+    .main-cont {
+        grid-template-columns: 30% 70%;
+    }
+
+    .menu-col-cont {
+        padding: 0 3%;
+    }
+
+    .book-desc-main-cont {
+        background: #FFFFFF;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.25fr;
+        padding-top: 5%;
+        height: auto;
+    }
+
+    #h3-pop-rds {
+        text-align: center;
+    }
+
+    .book-one {
+        display: inline;
+        margin: auto;
+        width: 80%;
+    }
+
+    .book-img-cont {
+        height: 60%;
+        width: 35%;
+        margin: 5% auto;
+    }
+
+    .book-txt-area {
+        display: inline;
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    .bk-title {
+        font-size: 1rem;
+        padding: 0;
+    }
+  
+    .auth-nm {
+        font-size: 1.25rem;
+        margin-top: 0;
+        padding: 2%;
+    }
+
+    .opinion-1 {
+        font-size: 1.25rem;
+        margin-top: 0;
+        padding: 2.5% 0 7.5% 0;
+    }
+
+    .rd-nw-btn-cont {
+        max-height: 100%;
+        max-width: 30%;
+    }
+
     footer {
         width: 100vw;
         margin-top: 8%
@@ -695,5 +744,95 @@ footer a {
 }
 
 @media only screen and (max-width: 777px) {
+
+    .hero-cont {
+        height: auto;
+    }
+
+    .hero-img {
+        object-fit: fill;
+    }
+
+    #h2-hero-txt {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 60%;
+        font-size: 1.75rem;
+        padding-left: 2%;
+    }
+
+    .hero-br {
+        display: none;
+    }
+
+    .bookshelf {
+        display: grid;
+        margin: auto;
+        margin-top: 10%;
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+    }
+
+    .headphones {
+        display: grid;
+        margin: auto;
+        margin-top: 10%;
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+    }
+
+    .musical-note {
+        display: grid;
+        margin: auto;
+        margin-top: 10%;
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+    }
+
+    .microphone {
+        display: grid;
+        margin: auto;
+        margin-top: 10%;
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+    }
+
+    .icon-txt {
+        text-align: center;
+        margin-top: 10%;
+        padding-top: 0;
+
+    }
+
+    .main-cont {
+        grid-template-columns: 40% 60%;
+    }
+
+    .rd-nw-btn-cont {
+        max-height: 100%;
+        max-width: 45%;
+        margin: auto;
+    }
+
+    .page-cont {
+        width: 100%;
+    }
+
+    .pages {
+        margin: auto;
+    }
+
+    #pg {
+        margin-right: 5px;
+    }
+
+    #carrot {
+        margin-left: 5px;
+    }
 
 }

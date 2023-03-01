@@ -11,35 +11,49 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="BookListing.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="navbar-main">
+        <nav>
             <div class="e-logo-cont">
                 <div class="e-logo" id="e-logo">e</div>
                 <div class="reads-logo">READS</div>
-            </div>    
-            <div class="home"><a href="index.html">Home</a></div>
-            <div class="about"><a href="About.html">About</a></div>
-            <div class="reg"><a href="Regis.html">Registration</a></div>
-            <div class="ebooks"><a href="BookListing.html">e-Books</a></div>
-             <div class="search-ebooks">
-                <form action="/" method="GET" class="form">
-                  <button type="submit" class="search-button">
-                    <img src="Assets\magnifying-glass.png">
-                  </button>
-                  <input type="search" placeholder="Search" class="search-field" />
-                </form>
-              </div>
-            <div class="profile-img"><a href="Profile.html"></a><img class="icons" src="https://i.ibb.co/k57Ccpg/iconmonstr-user-19-48.png"></a></div>  
+            </div>
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">E-Books</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="main">
+                <div class="search-ebooks">
+                    <form action="/" method="GET" class="form">
+                    <button type="submit" class="search-button">
+                        <img class="mag" src="Assets\magnifying-glass.png">
+                    </button>
+                    <input type="search" placeholder="Search E-Books" class="search-field" />
+                    </form>
+                </div>
+                <a href="Profile.html"><img class="icons" src="https://i.ibb.co/k57Ccpg/iconmonstr-user-19-48.png"></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
         </nav>
         <main>
             <div class="upper-hero-area">
                 <div class="hero-cont">
                 <img class="hero-img" src="Assets\jonathan-velasquez-c1ZN57GfDB0-unsplash1440x450.png">
-                <h2 id="h2-hero-txt">Millions of ebooks, audiobooks,<br>music, and podcasts. All in one<br>place.</h2>
+                <h2 id="h2-hero-txt">Millions of ebooks, audiobooks, <br class="hero-br">music, and podcasts. All in one <br class="hero-br">place.</h2>
             </div>
             <div class="icon-cont">
                 <div></div>
@@ -136,7 +150,7 @@
                 <div class="book-desc-main-cont">
                     <div class="book-one">
                         <div class="book-img-cont">
-                            <img id="bk-pic" src="Assets\the-war-of-the-worlds-9781451687989_hr.jpg" height="250" width="199">
+                            <img class="bk-pic" src="Assets\the-war-of-the-worlds-9781451687989_hr.jpg" height="250" width="199">
                         </div>
                         <div class="book-txt-area">
                             <h3 class="bk-title"><a href="BookDescr.html">The War of the Worlds</a></h3>
@@ -149,7 +163,7 @@
                     </div>
                     <div class="book-one">
                         <div class="book-img-cont">
-                            <img id="bk-pic" src="Assets\A Voyage to Arcturus Book.jpg" height="250" width="199">
+                            <img class="bk-pic" src="Assets\A Voyage to Arcturus Book.jpg" height="250" width="199">
                         </div>
                         <div class="book-txt-area">
                             <h3 class="bk-title"><a href="#">A Voyage to Arturus</a></h3>
@@ -162,7 +176,7 @@
                     </div>
                     <div class="book-one">
                         <div class="book-img-cont">
-                            <img id="wbk-pic" src="Assets\adventures of huckleberry finn book.jpg" height="250" width="199">
+                            <img class="bk-pic" src="Assets\adventures of huckleberry finn book.jpg" height="250" width="199">
                         </div>
                         <div class="book-txt-area">
                             <h3 class="bk-title"><a href="#">Adventures of Huckleberry Finn</a></h3>
@@ -175,7 +189,7 @@
                     </div>
                     <div class="book-one">
                         <div class="book-img-cont">
-                            <img id="bk-pic" src="Assets\across the equator book.jpeg" height="250" width="199">
+                            <img class="bk-pic" src="Assets\across the equator book.jpeg" height="250" width="199">
                         </div>
                         <div class="book-txt-area">
                             <h3 class="bk-title"><a href="#">Across the Equator</a></h3>
@@ -188,7 +202,7 @@
                     </div>
                     <div class="book-one">
                         <div class="book-img-cont">
-                            <img id="bk-pic" src="Assets\designng data-intensive applications book.jpg" height="250" width="199">
+                            <img class="bk-pic" src="Assets\designng data-intensive applications book.jpg" height="250" width="199">
                         </div>
                         <div class="book-txt-area">
                             <h3 class="bk-title"><a href="#">Designing Data-Intensive Applications</a></h3>
@@ -199,25 +213,25 @@
                             </div>
                         </div>
                     </div>
+                    <div class="page-cont">
+                        <div class="pages"><a href="#" id="pg">Page</a></div>
+                        <div class="pages"><a href="#" id="one">1</a></div>
+                        <div class="pages"><a href="#">2</a></div>
+                        <div class="pages"><a href="#">3</a></div>
+                        <div class="pages"><a href="#">4</a></div>
+                        <div class="pages"><a href="#">5</a></div>
+                        <div class="pages"><a href="#">6</a></div>
+                        <div class="pages"><a href="#">7</a></div>
+                        <div class="pages"><a href="#">8</a></div>
+                        <div class="pages"><a href="#">9</a></div>
+                        <div class="pages"><a href="#">Next</a></div>
+                        <div class="pages"><a href="#" id="carrot">></a></div>
+                    </div>
                 </div>  
             </div>               
         </main>
         <footer>
             <div class="footer-cont">
-                <div class="page-cont">
-                    <div><a href="#">Page</a></div>
-                    <div><a href="#">1</a></div>
-                    <div><a href="#">2</a></div>
-                    <div><a href="#">3</a></div>
-                    <div><a href="#">4</a></div>
-                    <div><a href="#">5</a></div>
-                    <div><a href="#">6</a></div>
-                    <div><a href="#">7</a></div>
-                    <div><a href="#">8</a></div>
-                    <div><a href="#">9</a></div>
-                    <div><a href="#">Next</a></div>
-                    <div><a href="#">></a></div>
-                </div>
                 <div class="ftr-txt">Privacy | Copyright | Terms of Use & Licenses | Authors | Publishers</div>
             </div>
         </footer>

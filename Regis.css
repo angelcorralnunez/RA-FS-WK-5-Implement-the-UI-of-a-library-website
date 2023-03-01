@@ -1,237 +1,295 @@
-@font-face
-    fon-family: 'Lemonada';
-    src: url(Font Lemonada\Lemonada-Regular.ttf) format('truetype');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Lilita One', cursive; */
+}
 
-    @font-face
-    fon-family: 'Inter';
-    src: url(Font Inter\Inter-Black.otf) format('opentype');
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #036DE9;
+}
 
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    min-width: 400px;
-    max-width: 1440px;
+    height: 100vh;
+    width: 100vw;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 0;
-    background: #FFFFFF;
-    font-family: 'Inter', sans-serif;
-}
-
-.navbar-main {
-    display: grid;
-    grid-template-columns: repeat(7, 2fr);
     width: 1440px;
-    height: 112px;
-    padding: 5px;
-    height: 112px;
-    flex-shrink: 0;
-    box-sizing:border-box;
-    border: 1px solid invisible;
-    background-color: #3A3838;
-    color: #FFFFFF;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-nav a {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
+nav {
+    background: #3A3838!important;
+    color: var(--text-color);
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: all .50s ease;
 }
 
 .e-logo-cont {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 141px;
-    height: 64px;
-    margin: 20px 35px 0 35px;
+    grid-template-columns: 40% 60%;
+    width: 25%;
+    height: 5vh;
+    justify-content: center;
 }
 
 #e-logo {
-    display: grid | inline-grid;
+    display: grid;
     color: #036DE9;
     text-shadow: 1px 1px #FFFFFF;
-    font-family: 'Lemonada', serif;
-    font-size: 32px;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5rem;
     font-weight: bold;
+    justify-content: flex-end;
+    margin-left: 0px;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    padding-right: 1%;
+    padding-top: 0;
+    padding-bottom: 1%;
 }
 
 .reads-logo {
-    display: grid | inline-grid;
-    font-family: 'Lemonada', serif;
-    font-size: 32px;
+    display: grid;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5rem;
     font-weight: bold;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
 }
 
-.home {
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    align-items: left;
+    font-size: 1rem;
 }
 
-.about {
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+    width: 100%;
+    text-decoration: none;
 }
 
-.reg {
-    display: inline-block;
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px; 
+.navbar a:hover {
+    color: var(--main-color);
 }
 
-.ebooks {
-    display: inline-block; 
-    margin: 40px 40px 40px 80px;
-    padding: 0;
-    font-size: 18px;
-    white-space: nowrap;
+.navbar a.active {
+    color: var(--main-color);
+}
+
+nav ul.navbar {
+    width: 50vw;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    width: 25%;
+    height: 90vh;
+}
+
+.main a {
+    width: 50%;
+    margin-left: 10%;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
 }
 
 .search-ebooks {
-    display: inline-block; 
-    width: 220px;
-    height: 36px;
+    display: grid; 
+    width: 80%;
+    height: 4vh;
     border-radius: 12px;
-    margin: 35px 40px 40px 80px;
+    margin-left: 10%;
     padding: 0;
-    font-size: 18px;
+    font-size: 0.5rem;
     background: #D9D9D9;
+    justify-content: flex-start;
 }
 
 .form {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .search-field {
-    width: 100%;
-    padding: 10px 15px 10px 35px;
+    display: flex;
+    width: 90%;
+    max-height: 100%;
+    padding: 0;
     border: none;
     border-radius: 100px;
     outline: none;
+    align-items: center;
   }
   
   .search-button {
     background: transparent;
     border: none;
     outline: none;
-    margin: 5px 0 2px 5px;
   }
   
   .search-button img {
     width: 18px;
     height: 18px;
     object-fit: cover;
+    margin-top: 4px; 
+  }
+
+  .mag {
+    justify-content: flex-start;
   }
 
 input {
-    padding-left: 5px;
     background: #D9D9D9;
+    font-size: 1.5em;
+    margin-left: 5%;
+    }
+
+.user {
+    display: flex;
+    align-items: center;
 }
 
-.profile-img {
-    margin: auto;
+.user i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
 }
+
+.main a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+} 
 
 main {
+    background: var(--text-color);
+    color: var(--bg-color);
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 1440px;
+    width: 100%;
 }
 
 .lft-cont {
     display: grid;
     grid-template-rows: 20% 60% 10% 10%;
-    width: 720px;
-    height: 830px;
+    width: 100%;
+    height: 100%;
 }
 
 .top-cont {
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 100%;
-    height: 100px;
-    margin: 40px auto auto auto;
-    height: 100px;
+    height: 100%;
+    width: 100%;
+    margin: 1% auto auto auto;
 }
 
 .welcome {
+    font-family: 'Lilita One', cursive;
+    font-style: italic;
     display: grid;
-    grid-template-columns: 60% 10% 30%;
-    margin: auto;
-    font-size: 22px;
+    grid-template-columns: 50% 3% 47%;
+    justify-content: center;
+    font-size: 1.25rem;
 }
 
 .welc-to {
-    margin: auto 0;
-    width: 225px;
-    font-family: 'Lemonada', serif;
+    white-space: nowrap;
+    padding: 10% 0 5% 58%; 
+    width: 100%;
 }
 
 .welc-e {
     margin: auto;
+    padding-top: 75%;
+    padding-left: 25%;
     color: #036DE9;
-    font-family: 'Lemonada', serif;
-    width: 15px;
+    width: 100%;
 }
 
 .welc-rds {
-    margin: auto;
-    width: 125px;
-    font-family: 'Lemonada', serif;
+    padding: 11% 70% 5% 0;
+    width: 100%;
 }
 
 .sign-up {
-    height: 19px;
-    width: 90px;
+    height: 100%;
+    width: 15%;
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 100%;
     margin: auto;
+    text-align: center;
 }
 
 h5 {
-    height: 19px;
-    width: 70px;
-    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
     margin: auto;
 }
 
 .form-box {
-    height: 550px;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 .form-cont {
+    font-family: 'Roboto', sans-serif;
     margin: auto;
-    height: 100px;
+    height: 20%;
 }
 
 .form-box p {
-    height: 30px;
+    height: 20%;
     display: flex;
     position: relative;
     align-items:center;
-    margin: 5px 0 5px 140px;
+    margin: 2% 0 2% 25%;
 
 }
 
 .reg-form {
     border: 1px solid #000000;
     display: grid; 
-    width: 432px;
+    width: 60%;
     border-radius: 8px;
-    padding: 0;
-    font-size: 18px;
+    padding: 0 0 0 2%;
+    font-size: 1.25rem;
     background: #FFFFFF;
     margin: auto;
+    margin-left: 20%;
 }
 
 .ereg-form {
@@ -239,8 +297,9 @@ h5 {
   }
 
   .reg-field {
-    width: 100%;
-    padding: 10px 15px 10px 35px;
+    font-size: 1.25rem;
+    width: 90%;
+    padding: 2% 0;
     border: none;
     border-radius: 100px;
     outline: none;
@@ -251,75 +310,259 @@ h5 {
     background: transparent;
     border: none;
     outline: none;
-    margin: 5px 0 2px 5px;
+    margin: auto;
   }
 
 input {
-    padding-left: 5px;
+    padding-left: 10%;
     background: #D9D9D9;
 }
 
 .t-and-c-txt { 
-    height: 25;
-    width: 525;
+    font-family: 'Roboto', sans-serif;
+    height: 25%;
+    width: 100%;
     align-items: center;
-    margin: 5px 0 5px 85px;
+    margin: 0 0 5% 12%;
 }
 
 .btn-cont {
-    margin: auto;    
+    height: 50%;
+    width: 25%; 
+    margin: 0 0 0 38%;
 }
 
 .btn-box {
-    height: 60px;
-    width: 270px;
-    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: auto; 
 }
 
 .profile-btn {
     background: #000000;
     color: #FFFFFF;
-    height: 56px;
-    width: 267px;
+    min-height: 100%;
+    min-width: 100%;
     border: 5px solid invisible;
     border-radius: 12px;
     font-family: 'Inter', sans-serif;
-    font-size: 12px;
-}
-
-.img-cont {
-    display: grid;
-    width: 595px;
-    height: 830px;
-    margin: auto;
-}
-
-.ldr-img {
-    margin: auto;
-    width: 720px;
-    height: 830px;
-    object-fit: fill;
+    font-size: 0.75rem;
 }
 
 .rt-cont {
-    display: grid;
-    grid-template-columns: 52.2% 5% 30%;
-    width: 720px;
-    height: 830px;
+    width: 100%;
+    height: 100%;
+}
+
+.img-cont {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    flex-grow: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.ldr-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 footer {
-    max-width: 1440px;
-    display: grid;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-cont {
-    display: grid;
-    margin: auto;                                               
-    grid-template-columns: 100%;
+    margin-top: 1%;
 }
 
 .ftr-txt {
-    font-size: 18px;
-    padding: 40px 8px 0 8px; 
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1025px) {
+    body {
+        max-width: 100vw;
+        margin: 0;
+    }
+
+        .navbar {
+            position: absolute;
+            top: 10%;
+            right: 2%;
+            background: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-radius: 10px;
+            transition: all .50s ease;
+        }
+
+        nav ul.navbar {
+            width: 40vw;
+            padding: 0;
+        }
+
+        .navbar a {
+            display: block;
+            margin: 5px 0;
+            padding: 0px 25px;
+            transition: all .50s ease;
+        }
+
+        .navbar a:hover {
+            color: var(--text-color);
+            transform: translateY(5px);
+        }
+
+        .navbar a.active {
+            color: var(--text-color);
+    
+        }
+
+        .navbar.open {
+            right: 2%;
+        }
+
+
+    .e-logo-cont {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        width: 33.33%;
+        height: 5vh;
+        justify-content: center;
+    }
+
+    #e-logo {
+        font-size: 1.25rem;
+        padding-right: 1%;
+        padding-bottom: 0;
+    }
+
+    .reads-logo {
+        display: grid;
+        font-size: 1.25rem;
+        font-weight: bold;
+        width: 100%;
+        height: 5vh;
+        padding-top: 5px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 70% 15% 15%;
+        align-items: center;
+        width: 66.66%;
+    
+    }
+
+    .main a {
+        display: grid;
+        width: 100%;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    #menu-icon {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    
+    }
+
+    .search-ebooks {
+        width: 50%;
+        margin-left: 35%;
+    }
+
+    form {
+        align-items: flex-end;
+    }
+
+    .welcome {
+        grid-template-columns: 60% 5% 35%;
+    }
+    
+    .welc-to {
+        text-align: right;
+        padding: 10% 1% 15% 0; 
+    }
+    
+    .welc-e {
+        text-align: center;
+        margin: auto;
+        padding-top: 0%;
+        padding-bottom: 55%;
+        padding-left: 20%;
+    }
+    
+    .welc-rds {
+        text-align: left;
+        padding: 18% 0 5% 5%;
+    }
+
+    .sign-up {
+        text-align: center;
+        white-space: nowrap;
+    }
+    
+    .form-box p {
+        margin: 2% 0 2% 15%;
+    
+    }
+
+    .t-and-c-txt { 
+        width: 70%;
+        align-items: left;
+    }
+
+    .btn-cont {
+        height: 50%;
+        width: 25%; 
+        margin: 10% 0 0 38%;
+    }
+    
+    .btn-box {
+        font-family: 'Roboto', sans-serif;
+        height: 100%;
+        width: 100%;
+        margin: auto; 
+    }
+    
+    .profile-btn {
+        background: #000000;
+        color: #FFFFFF;
+        min-height: 100%;
+        min-width: 100%;
+        border: 5px solid invisible;
+        border-radius: 12px;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.75rem;
+    }
+
+    footer {
+        width: 100vw;
+        margin-top: 8%
+    }
+
+    .footer-cont {
+        padding-top: 2%;
+    }
+
+    .ftr-txt {
+        display: grid;
+        font-size: .75em;
+        display: inline;
+        white-space: nowrap;
+    }
+
 }
